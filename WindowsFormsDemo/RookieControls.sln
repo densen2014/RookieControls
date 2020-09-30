@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsDemo", "WindowsFormsDemo.csproj", "{40041137-50E0-4E92-9B3F-6A695C6CA02B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RookieControls", "..\RookieControls\RookieControls.csproj", "{1276015C-B15C-4867-BFD1-8A902452F230}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40041137-50E0-4E92-9B3F-6A695C6CA02B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40041137-50E0-4E92-9B3F-6A695C6CA02B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40041137-50E0-4E92-9B3F-6A695C6CA02B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40041137-50E0-4E92-9B3F-6A695C6CA02B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1276015C-B15C-4867-BFD1-8A902452F230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1276015C-B15C-4867-BFD1-8A902452F230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1276015C-B15C-4867-BFD1-8A902452F230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1276015C-B15C-4867-BFD1-8A902452F230}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2015D57-4A79-4368-8435-EA607CFF028C}
+	EndGlobalSection
+EndGlobal
