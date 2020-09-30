@@ -23,6 +23,13 @@ namespace WindowsFormsApp2
         private void Form1_Load(object sender, EventArgs e)
         {
             this.DoubleBuffered = true;
+            dataGridViewHiDpi1.HiDpi();
+
+            for (int i = 0; i < 10; i++)
+            {
+                dataGridViewHiDpi1.Rows.Add(i.ToString());
+                dataGridView1.Rows.Add(i.ToString());
+            }
         }
 
        
@@ -33,6 +40,16 @@ namespace WindowsFormsApp2
         private void roundButton2_Click(object sender, EventArgs e)
         {
             _ = AsyncBreakfast.Program.Main();
+
+        }
+
+        private void roundButton4_Click(object sender, EventArgs e)
+        {
+           // new Form2().Show();
+        }
+
+        private void inputNumber1_Load(object sender, EventArgs e)
+        {
 
         }
     }

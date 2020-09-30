@@ -1,6 +1,6 @@
 ﻿namespace Rookie.Component
 {
-    partial class RoundButton
+    partial class DataGridViewHiDpi
     {
         /// <summary>
         /// Required designer variable.

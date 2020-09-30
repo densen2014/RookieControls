@@ -28,29 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.inputNumber1 = new Rookie.Component.InputNumber();
             this.roundButton4 = new Rookie.Component.RoundButton();
-            this.roundButton3 = new Rookie.Component.RoundButton();
             this.roundButton2 = new Rookie.Component.RoundButton();
             this.roundButton1 = new Rookie.Component.RoundButton();
+            this.dataGridViewHiDpi1 = new Rookie.Component.DataGridViewHiDpi();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(501, 363);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 53);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // inputNumber1
             // 
-            this.inputNumber1.Location = new System.Drawing.Point(142, 473);
+            this.inputNumber1.Location = new System.Drawing.Point(20, 14);
+            this.inputNumber1.Margin = new System.Windows.Forms.Padding(1);
             this.inputNumber1.Name = "inputNumber1";
-            this.inputNumber1.Size = new System.Drawing.Size(205, 68);
+            this.inputNumber1.Size = new System.Drawing.Size(110, 39);
             this.inputNumber1.TabIndex = 0;
+            this.inputNumber1.Load += new System.EventHandler(this.inputNumber1_Load);
             // 
             // roundButton4
             // 
@@ -60,38 +63,23 @@
             this.roundButton4.FocusBorderColor = System.Drawing.Color.OrangeRed;
             this.roundButton4.Font = new System.Drawing.Font("Arial", 16F);
             this.roundButton4.IconColor2 = System.Drawing.Color.Red;
-            this.roundButton4.Location = new System.Drawing.Point(904, 301);
-            this.roundButton4.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.roundButton4.Location = new System.Drawing.Point(778, 13);
             this.roundButton4.Name = "roundButton4";
-            this.roundButton4.Size = new System.Drawing.Size(471, 466);
+            this.roundButton4.Size = new System.Drawing.Size(111, 113);
             this.roundButton4.TabIndex = 4;
             this.roundButton4.Text = "roundButton4";
             this.roundButton4.UseVisualStyleBackColor = true;
-            // 
-            // roundButton3
-            // 
-            this.roundButton3.DistanceToBorder = 4;
-            this.roundButton3.Font = new System.Drawing.Font("Arial", 16F);
-            this.roundButton3.IconColor2 = System.Drawing.Color.Red;
-            this.roundButton3.Location = new System.Drawing.Point(871, 21);
-            this.roundButton3.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.roundButton3.Name = "roundButton3";
-            this.roundButton3.Size = new System.Drawing.Size(292, 268);
-            this.roundButton3.TabIndex = 3;
-            this.roundButton3.Text = "roundButton3";
-            this.roundButton3.UseVisualStyleBackColor = true;
+            this.roundButton4.Click += new System.EventHandler(this.roundButton4_Click);
             // 
             // roundButton2
             // 
             this.roundButton2.DistanceToBorder = 4;
             this.roundButton2.Font = new System.Drawing.Font("幼圆", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.roundButton2.ForeColor = System.Drawing.Color.Green;
             this.roundButton2.IconColor2 = System.Drawing.Color.Red;
             this.roundButton2.IsShowIcon = false;
-            this.roundButton2.Location = new System.Drawing.Point(422, 74);
-            this.roundButton2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.roundButton2.Location = new System.Drawing.Point(792, 262);
             this.roundButton2.Name = "roundButton2";
-            this.roundButton2.Size = new System.Drawing.Size(176, 118);
+            this.roundButton2.Size = new System.Drawing.Size(96, 67);
             this.roundButton2.TabIndex = 2;
             this.roundButton2.Text = "早餐";
             this.roundButton2.UseVisualStyleBackColor = true;
@@ -102,31 +90,100 @@
             this.roundButton1.DistanceToBorder = 4;
             this.roundButton1.Font = new System.Drawing.Font("Arial", 16F);
             this.roundButton1.IconColor2 = System.Drawing.Color.Red;
-            this.roundButton1.Location = new System.Drawing.Point(73, 52);
-            this.roundButton1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.roundButton1.Location = new System.Drawing.Point(786, 138);
             this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(248, 236);
+            this.roundButton1.Size = new System.Drawing.Size(102, 105);
             this.roundButton1.TabIndex = 1;
             this.roundButton1.Text = "roundButton1";
             this.roundButton1.UseVisualStyleBackColor = true;
             // 
+            // dataGridViewHiDpi1
+            // 
+            this.dataGridViewHiDpi1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewHiDpi1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            this.dataGridViewHiDpi1.DpiRate = 0D;
+            this.dataGridViewHiDpi1.Location = new System.Drawing.Point(75, 120);
+            this.dataGridViewHiDpi1.Name = "dataGridViewHiDpi1";
+            this.dataGridViewHiDpi1.RowTemplate.Height = 23;
+            this.dataGridViewHiDpi1.Size = new System.Drawing.Size(542, 253);
+            this.dataGridViewHiDpi1.TabIndex = 5;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Column2";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Column3";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Column4";
+            this.Column4.Name = "Column4";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8});
+            this.dataGridView1.Location = new System.Drawing.Point(75, 408);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 23;
+            this.dataGridView1.Size = new System.Drawing.Size(542, 219);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Column5";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Column6";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Column7";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Column8";
+            this.Column8.Name = "Column8";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1467, 788);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(900, 639);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewHiDpi1);
             this.Controls.Add(this.inputNumber1);
             this.Controls.Add(this.roundButton4);
-            this.Controls.Add(this.roundButton3);
             this.Controls.Add(this.roundButton2);
             this.Controls.Add(this.roundButton1);
-            this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.TransparencyKey = System.Drawing.Color.LightPink;
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -134,10 +191,18 @@
         #endregion
         private Rookie.Component.RoundButton roundButton1;
         private Rookie.Component.RoundButton roundButton2;
-        private Rookie.Component.RoundButton roundButton3;
         private Rookie.Component.RoundButton roundButton4;
         private Rookie.Component.InputNumber inputNumber1;
-        private System.Windows.Forms.Button button1;
+        private Rookie.Component.DataGridViewHiDpi dataGridViewHiDpi1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
     }
 }
 
