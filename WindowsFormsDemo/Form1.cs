@@ -30,9 +30,10 @@ namespace WindowsFormsApp2
                 dataGridViewHiDpi1.Rows.Add(i.ToString());
                 dataGridView1.Rows.Add(i.ToString());
             }
+            this.roundButtonToast消息提示框.Click += new System.EventHandler(this.roundButtonToast消息提示框_Click);
         }
 
-       
+
 
         private List<Circle> Circles = new List<Circle>();
         private Circle circle = new Circle();
@@ -48,10 +49,22 @@ namespace WindowsFormsApp2
            // new Form2().Show();
         }
 
-        private void inputNumber1_Load(object sender, EventArgs e)
+        private void roundButtonToast消息提示框_Click(object sender, EventArgs e)
         {
+            var Toast = new Toast();
+            Toast.Show($"切换中文.", AlertType.Info);
 
+            var Toast2 = new Toast();
+            Toast2.Show($"切换中文.", AlertType.Warning);
+
+            var Toast3 = new Toast();
+            Toast3.Show($"切换中文.", AlertType.Error);
+
+            var Toast4 = new Toast();
+            Toast4.Show($"切换中文.", AlertType.Success);
         }
+
+
     }
     public class Circle
     {

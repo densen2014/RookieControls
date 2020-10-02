@@ -42,6 +42,9 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.roundButtonToast消息提示框 = new Rookie.Component.RoundButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +56,6 @@
             this.inputNumber1.Name = "inputNumber1";
             this.inputNumber1.Size = new System.Drawing.Size(110, 39);
             this.inputNumber1.TabIndex = 0;
-            this.inputNumber1.Load += new System.EventHandler(this.inputNumber1_Load);
             // 
             // roundButton4
             // 
@@ -166,16 +168,50 @@
             this.Column8.HeaderText = "Column8";
             this.Column8.Name = "Column8";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(73, 389);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 12);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "默认DGV";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(73, 100);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 12);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "支持HiDpi的DGV";
+            // 
+            // roundButtonToast消息提示框
+            // 
+            this.roundButtonToast消息提示框.DistanceToBorder = 4;
+            this.roundButtonToast消息提示框.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.roundButtonToast消息提示框.IconColor2 = System.Drawing.Color.Red;
+            this.roundButtonToast消息提示框.IsShowIcon = false;
+            this.roundButtonToast消息提示框.Location = new System.Drawing.Point(703, 345);
+            this.roundButtonToast消息提示框.Name = "roundButtonToast消息提示框";
+            this.roundButtonToast消息提示框.Size = new System.Drawing.Size(186, 98);
+            this.roundButtonToast消息提示框.TabIndex = 2;
+            this.roundButtonToast消息提示框.Text = "Toast消息提示框";
+            this.roundButtonToast消息提示框.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(900, 639);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dataGridViewHiDpi1);
             this.Controls.Add(this.inputNumber1);
             this.Controls.Add(this.roundButton4);
+            this.Controls.Add(this.roundButtonToast消息提示框);
             this.Controls.Add(this.roundButton2);
             this.Controls.Add(this.roundButton1);
             this.Name = "Form1";
@@ -185,6 +221,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -203,6 +240,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private Rookie.Component.RoundButton roundButtonToast消息提示框;
     }
 }
 
