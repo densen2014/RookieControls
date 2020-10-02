@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Alex Chow</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/densen2014/RookieControls</projectUrl>
+    <description>$description$</description>
+    <releaseNotes>本项目是一个Winform组件库,支持HiDPI.</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>菜鸟学建自定义控件 HiDPIWinform</tags>
+  
+    <!-- 定义当前 NuGet Package 对其他第三方 Package 的依赖 -->
+    <dependencies>
+      <dependency id="FontAwesome.Sharp" version="5.4.1" />
+    </dependencies>
+
+  </metadata>
+</package>
