@@ -9,7 +9,7 @@ Null
 https://www.nuget.org/packages/RookieControls/
 
 ### 1001
-- **增加** Toast
+- **增加** Toast, 图标使用 https://fontawesome.com/icons?d=gallery
 
 ### 0930
 - **增加** 圆角播放按钮.
