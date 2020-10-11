@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>WindowsFormsApp2</RootNamespace>
     <AssemblyName>WindowsFormsApp2</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
@@ -98,6 +98,11 @@
       <Project>{1276015c-b15c-4867-bfd1-8a902452f230}</Project>
       <Name>RookieControls</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FontAwesome.Sharp">
+      <Version>5.14.1</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

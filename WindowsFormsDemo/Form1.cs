@@ -24,7 +24,8 @@ namespace WindowsFormsApp2
         {
             this.DoubleBuffered = true;
             dataGridViewHiDpi1.HiDpi();
-
+            double DpiRate=  NativeMethods.GetDisplayScaleFactor(this.Handle)*100 ;
+            this.Text = "DPI:" + DpiRate.ToString() + "%";
             for (int i = 0; i < 10; i++)
             {
                 dataGridViewHiDpi1.Rows.Add(i.ToString());
@@ -40,7 +41,7 @@ namespace WindowsFormsApp2
 
         private void roundButton2_Click(object sender, EventArgs e)
         {
-            _ = AsyncBreakfast.Program.Main();
+            //_ = AsyncBreakfast.Program.Main();
 
         }
 
@@ -64,7 +65,29 @@ namespace WindowsFormsApp2
             Toast4.Show($"切换中文.", AlertType.Success);
         }
 
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            var Toast = new Toast();
+            Toast.Show("99级别,和太阳肩并肩", AlertType.Success);
+        }
 
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            var Toast = new Toast();
+            Toast.Show("99级别,和太阳肩并肩", AlertType.Error);
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            var Toast = new Toast();
+            Toast.Show("99级别,和太阳肩并肩", AlertType.Warning);
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            var Toast = new Toast();
+            Toast.Show("99级别,和太阳肩并肩", AlertType.Info);
+        }
     }
     public class Circle
     {

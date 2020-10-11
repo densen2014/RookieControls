@@ -45,6 +45,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.roundButtonToast消息提示框 = new Rookie.Component.RoundButton();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -199,12 +203,88 @@
             this.roundButtonToast消息提示框.Text = "Toast消息提示框";
             this.roundButtonToast消息提示框.UseVisualStyleBackColor = true;
             // 
+            // iconButton4
+            // 
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton4.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Heart;
+            this.iconButton4.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.iconButton4.IconSize = 32;
+            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton4.Location = new System.Drawing.Point(383, 14);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Rotation = 0D;
+            this.iconButton4.Size = new System.Drawing.Size(70, 43);
+            this.iconButton4.TabIndex = 11;
+            this.iconButton4.Text = "点我";
+            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton4.UseVisualStyleBackColor = true;
+            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Heart;
+            this.iconButton3.IconColor = System.Drawing.Color.DarkOrange;
+            this.iconButton3.IconSize = 32;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.Location = new System.Drawing.Point(307, 14);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Rotation = 0D;
+            this.iconButton3.Size = new System.Drawing.Size(70, 43);
+            this.iconButton3.TabIndex = 10;
+            this.iconButton3.Text = "点我";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton3.UseVisualStyleBackColor = true;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton2.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Heart;
+            this.iconButton2.IconColor = System.Drawing.Color.Red;
+            this.iconButton2.IconSize = 32;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(231, 14);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Rotation = 0D;
+            this.iconButton2.Size = new System.Drawing.Size(70, 43);
+            this.iconButton2.TabIndex = 9;
+            this.iconButton2.Text = "点我";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Heart;
+            this.iconButton1.IconColor = System.Drawing.Color.Green;
+            this.iconButton1.IconSize = 32;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(155, 14);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Rotation = 0D;
+            this.iconButton1.Size = new System.Drawing.Size(70, 43);
+            this.iconButton1.TabIndex = 8;
+            this.iconButton1.Text = "点我";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(900, 639);
+            this.Controls.Add(this.iconButton4);
+            this.Controls.Add(this.iconButton3);
+            this.Controls.Add(this.iconButton2);
+            this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
@@ -243,6 +323,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private Rookie.Component.RoundButton roundButtonToast消息提示框;
+        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
 
