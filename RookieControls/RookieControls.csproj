@@ -22,7 +22,6 @@
   <ItemGroup>
     <None Include="logo.png" Pack="true" PackagePath="" />
   </ItemGroup>
-
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -108,7 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FontAwesome.Sharp">
-      <Version>5.14.1</Version>
+      <Version>5.15.3</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
