@@ -11,6 +11,7 @@ using System.Drawing.Drawing2D;
 
 namespace Rookie.Component
 {
+    [Description("圆形按钮")]
     public partial class RoundButton : Button
     {
         #region --成员变量--

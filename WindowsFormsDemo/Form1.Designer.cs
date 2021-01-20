@@ -56,9 +56,19 @@
             this.roundButtonToast消息提示框 = new Rookie.Component.RoundButton();
             this.roundButton2 = new Rookie.Component.RoundButton();
             this.roundButton1 = new Rookie.Component.RoundButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -69,7 +79,7 @@
             this.Column6,
             this.Column7,
             this.Column8});
-            this.dataGridView1.Location = new System.Drawing.Point(75, 408);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 276);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(542, 197);
@@ -98,7 +108,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(73, 389);
+            this.label1.Location = new System.Drawing.Point(264, 261);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 12);
             this.label1.TabIndex = 7;
@@ -107,7 +117,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(73, 100);
+            this.label2.Location = new System.Drawing.Point(251, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 12);
             this.label2.TabIndex = 7;
@@ -121,7 +131,7 @@
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 32;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(383, 14);
+            this.iconButton4.Location = new System.Drawing.Point(242, 20);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Size = new System.Drawing.Size(70, 43);
             this.iconButton4.TabIndex = 11;
@@ -138,7 +148,7 @@
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 32;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(307, 14);
+            this.iconButton3.Location = new System.Drawing.Point(166, 20);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(70, 43);
             this.iconButton3.TabIndex = 10;
@@ -155,7 +165,7 @@
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 32;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(231, 14);
+            this.iconButton2.Location = new System.Drawing.Point(90, 20);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(70, 43);
             this.iconButton2.TabIndex = 9;
@@ -172,7 +182,7 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 32;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(155, 14);
+            this.iconButton1.Location = new System.Drawing.Point(14, 20);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(70, 43);
             this.iconButton1.TabIndex = 8;
@@ -221,7 +231,7 @@
             // 
             // textBoxWithPlaceholder1
             // 
-            this.textBoxWithPlaceholder1.Location = new System.Drawing.Point(490, 26);
+            this.textBoxWithPlaceholder1.Location = new System.Drawing.Point(30, 28);
             this.textBoxWithPlaceholder1.Name = "textBoxWithPlaceholder1";
             this.textBoxWithPlaceholder1.Placeholder = "输入用户名";
             this.textBoxWithPlaceholder1.Size = new System.Drawing.Size(148, 21);
@@ -237,7 +247,7 @@
             this.roundButton3.IconColor2 = System.Drawing.Color.Red;
             this.roundButton3.IsRectangle = true;
             this.roundButton3.IsShowIcon = false;
-            this.roundButton3.Location = new System.Drawing.Point(750, 521);
+            this.roundButton3.Location = new System.Drawing.Point(184, 160);
             this.roundButton3.Name = "roundButton3";
             this.roundButton3.Size = new System.Drawing.Size(79, 54);
             this.roundButton3.TabIndex = 12;
@@ -253,10 +263,10 @@
             this.Column3,
             this.Column4});
             this.dataGridViewHiDpi1.DpiRate = 0D;
-            this.dataGridViewHiDpi1.Location = new System.Drawing.Point(75, 120);
+            this.dataGridViewHiDpi1.Location = new System.Drawing.Point(16, 47);
             this.dataGridViewHiDpi1.Name = "dataGridViewHiDpi1";
             this.dataGridViewHiDpi1.RowTemplate.Height = 23;
-            this.dataGridViewHiDpi1.Size = new System.Drawing.Size(542, 253);
+            this.dataGridViewHiDpi1.Size = new System.Drawing.Size(542, 209);
             this.dataGridViewHiDpi1.TabIndex = 5;
             // 
             // Column1
@@ -281,7 +291,7 @@
             // 
             // inputNumber1
             // 
-            this.inputNumber1.Location = new System.Drawing.Point(20, 14);
+            this.inputNumber1.Location = new System.Drawing.Point(30, 22);
             this.inputNumber1.Margin = new System.Windows.Forms.Padding(1);
             this.inputNumber1.Name = "inputNumber1";
             this.inputNumber1.Size = new System.Drawing.Size(110, 39);
@@ -295,9 +305,9 @@
             this.roundButton4.FocusBorderColor = System.Drawing.Color.OrangeRed;
             this.roundButton4.Font = new System.Drawing.Font("Arial", 16F);
             this.roundButton4.IconColor2 = System.Drawing.Color.Red;
-            this.roundButton4.Location = new System.Drawing.Point(778, 13);
+            this.roundButton4.Location = new System.Drawing.Point(161, 28);
             this.roundButton4.Name = "roundButton4";
-            this.roundButton4.Size = new System.Drawing.Size(111, 113);
+            this.roundButton4.Size = new System.Drawing.Size(102, 105);
             this.roundButton4.TabIndex = 4;
             this.roundButton4.Text = "roundButton4";
             this.roundButton4.UseVisualStyleBackColor = true;
@@ -309,7 +319,7 @@
             this.roundButtonToast消息提示框.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.roundButtonToast消息提示框.IconColor2 = System.Drawing.Color.Red;
             this.roundButtonToast消息提示框.IsShowIcon = false;
-            this.roundButtonToast消息提示框.Location = new System.Drawing.Point(703, 345);
+            this.roundButtonToast消息提示框.Location = new System.Drawing.Point(61, 261);
             this.roundButtonToast消息提示框.Name = "roundButtonToast消息提示框";
             this.roundButtonToast消息提示框.Size = new System.Drawing.Size(186, 98);
             this.roundButtonToast消息提示框.TabIndex = 2;
@@ -322,7 +332,7 @@
             this.roundButton2.Font = new System.Drawing.Font("幼圆", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.roundButton2.IconColor2 = System.Drawing.Color.Red;
             this.roundButton2.IsShowIcon = false;
-            this.roundButton2.Location = new System.Drawing.Point(792, 262);
+            this.roundButton2.Location = new System.Drawing.Point(39, 160);
             this.roundButton2.Name = "roundButton2";
             this.roundButton2.Size = new System.Drawing.Size(96, 67);
             this.roundButton2.TabIndex = 2;
@@ -335,12 +345,72 @@
             this.roundButton1.DistanceToBorder = 4;
             this.roundButton1.Font = new System.Drawing.Font("Arial", 16F);
             this.roundButton1.IconColor2 = System.Drawing.Color.Red;
-            this.roundButton1.Location = new System.Drawing.Point(786, 138);
+            this.roundButton1.Location = new System.Drawing.Point(33, 32);
             this.roundButton1.Name = "roundButton1";
             this.roundButton1.Size = new System.Drawing.Size(102, 105);
             this.roundButton1.TabIndex = 1;
             this.roundButton1.Text = "roundButton1";
             this.roundButton1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.iconButton4);
+            this.groupBox1.Controls.Add(this.iconButton1);
+            this.groupBox1.Controls.Add(this.iconButton2);
+            this.groupBox1.Controls.Add(this.iconButton3);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(349, 81);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "iconButton(FontAwesome)";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.textBoxWithPlaceholder1);
+            this.groupBox2.Location = new System.Drawing.Point(376, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(268, 81);
+            this.groupBox2.TabIndex = 16;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "有占位文本的文本框 TextBoxWithPlaceholder";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.roundButton1);
+            this.groupBox3.Controls.Add(this.roundButton4);
+            this.groupBox3.Controls.Add(this.roundButton2);
+            this.groupBox3.Controls.Add(this.roundButtonToast消息提示框);
+            this.groupBox3.Controls.Add(this.roundButton3);
+            this.groupBox3.Location = new System.Drawing.Point(589, 115);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(299, 488);
+            this.groupBox3.TabIndex = 17;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "圆形按钮 RoundButton";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label2);
+            this.groupBox4.Controls.Add(this.dataGridView1);
+            this.groupBox4.Controls.Add(this.label1);
+            this.groupBox4.Controls.Add(this.dataGridViewHiDpi1);
+            this.groupBox4.Location = new System.Drawing.Point(12, 115);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(571, 488);
+            this.groupBox4.TabIndex = 18;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "支持HiDpi的DGV DataGridViewHiDpi";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.inputNumber1);
+            this.groupBox5.Location = new System.Drawing.Point(661, 16);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(227, 77);
+            this.groupBox5.TabIndex = 18;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "数字输入框 InputNumber";
             // 
             // Form1
             // 
@@ -348,22 +418,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(900, 639);
-            this.Controls.Add(this.textBoxWithPlaceholder1);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.roundButton3);
-            this.Controls.Add(this.iconButton4);
-            this.Controls.Add(this.iconButton3);
-            this.Controls.Add(this.iconButton2);
-            this.Controls.Add(this.iconButton1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.dataGridViewHiDpi1);
-            this.Controls.Add(this.inputNumber1);
-            this.Controls.Add(this.roundButton4);
-            this.Controls.Add(this.roundButtonToast消息提示框);
-            this.Controls.Add(this.roundButton2);
-            this.Controls.Add(this.roundButton1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.TransparencyKey = System.Drawing.Color.LightPink;
@@ -372,6 +432,13 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,6 +472,11 @@
         private System.Windows.Forms.ToolStripDropDownButton DropDown网卡;
         private System.Windows.Forms.ToolStripSplitButton Button切换;
         private TextBoxWithPlaceholder textBoxWithPlaceholder1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox5;
     }
 }
 
