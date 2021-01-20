@@ -1,6 +1,8 @@
-﻿ 
+﻿
+using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using System.Timers;
+using System.Linq;
 
 namespace Monitor
 {
@@ -32,6 +34,22 @@ namespace Monitor
             timer.Interval = 1000;
         }
 
+        /// <summary>
+        /// 网卡列表
+        /// </summary>
+        /// <returns></returns>
+        public List<string> NicList()
+        {
+            var nicslist =new List<string>();
+            NetworkInterface[] nics = NetworkInterface.GetAllNetworkInterfaces();
+            foreach (var var in nics) nicslist.Add(var.Description); 
+            return nicslist;
+        }
+
+        /// <summary>
+        /// 启动
+        /// </summary>
+        /// <returns></returns>
         public bool Start()
         {
             networkInterface = null;
@@ -105,6 +123,11 @@ namespace Monitor
             AllTraffic = value.ToString("0.0") + unitAlls[num];
         }
 
+        /// <summary>
+        /// 计算速度
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {
             CalcUpSpeed();

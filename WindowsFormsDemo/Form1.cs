@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Rookie.Component;
@@ -17,11 +18,20 @@ namespace WindowsFormsApp2
         public Form1()
         {
             InitializeComponent();
+            FormClosing += new FormClosingEventHandler(Form1_Closing);
         }
 
         List<Color> pColors = new List<Color>() { Color.Red, Color.Blue, Color.Yellow };
         List<Point> posPoint = new List<Point>() { new Point(20, 20), new Point(40, 30) };
+        
+        Monitor.MonitorNetwork speed;
+        private CancellationTokenSource CancelTokenSource { get; set; }
 
+        private void Form1_Closing(object sender, FormClosingEventArgs e)
+        {
+            CancelTokenSource.Cancel();
+            speed.Close(); 
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             this.DoubleBuffered = true;
@@ -34,8 +44,32 @@ namespace WindowsFormsApp2
                 dataGridView1.Rows.Add(i.ToString());
             }
             this.roundButtonToast消息提示框.Click += new System.EventHandler(this.roundButtonToast消息提示框_Click);
-        }
 
+
+            #region 网速
+            Task.Run(() =>
+                {
+                    CancelTokenSource = new CancellationTokenSource();
+                    speed = new Monitor.MonitorNetwork("Hyper-V Virtual Ethernet Adapter #6");
+                    var niclist = speed.NicList();
+                    foreach (var item in niclist) Invoke(new Action(() => DropDown网卡.DropDownItems.Add(item))); 
+                    speed.Start();
+                    Task.Run(async () =>
+                    {
+                        do
+                        {
+                            try
+                            {
+                                await Task.Delay(1000, CancelTokenSource.Token);
+                                Invoke(new Action(() => Status网速.Text = $"上{speed.UpSpeed}/下{speed.DownSpeed}/总{speed.AllTraffic}"));
+                            }
+                            finally { } 
+                        } while (!CancelTokenSource.IsCancellationRequested);
+
+                    });
+                });
+            #endregion
+        }
 
 
         private List<Circle> Circles = new List<Circle>();
@@ -97,6 +131,11 @@ namespace WindowsFormsApp2
         {
             new Toast("99级别,和太阳肩并肩", AlertType.Info);
             Activate();
+        }
+
+        private void Button切换_ButtonClick(object sender, EventArgs e)
+        {
+
         }
     }
     public class Circle

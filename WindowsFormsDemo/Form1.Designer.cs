@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,6 +40,11 @@
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.DropDown网卡 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.Status网速 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.Button切换 = new System.Windows.Forms.ToolStripSplitButton();
+            this.textBoxWithPlaceholder1 = new TextBoxWithPlaceholder();
             this.roundButton3 = new Rookie.Component.RoundButton();
             this.dataGridViewHiDpi1 = new Rookie.Component.DataGridViewHiDpi();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +57,7 @@
             this.roundButton2 = new Rookie.Component.RoundButton();
             this.roundButton1 = new Rookie.Component.RoundButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +72,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(75, 408);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(542, 219);
+            this.dataGridView1.Size = new System.Drawing.Size(542, 197);
             this.dataGridView1.TabIndex = 6;
             // 
             // Column5
@@ -173,6 +180,52 @@
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.iconButton1.UseVisualStyleBackColor = true;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.DropDown网卡,
+            this.Status网速,
+            this.Button切换});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 616);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(900, 23);
+            this.statusStrip1.TabIndex = 13;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // DropDown网卡
+            // 
+            this.DropDown网卡.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.DropDown网卡.Image = ((System.Drawing.Image)(resources.GetObject("DropDown网卡.Image")));
+            this.DropDown网卡.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.DropDown网卡.Name = "DropDown网卡";
+            this.DropDown网卡.Size = new System.Drawing.Size(45, 21);
+            this.DropDown网卡.Text = "网卡";
+            this.DropDown网卡.ToolTipText = "网卡";
+            // 
+            // Status网速
+            // 
+            this.Status网速.Name = "Status网速";
+            this.Status网速.Size = new System.Drawing.Size(131, 18);
+            this.Status网速.Text = "toolStripStatusLabel1";
+            // 
+            // Button切换
+            // 
+            this.Button切换.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Button切换.Image = ((System.Drawing.Image)(resources.GetObject("Button切换.Image")));
+            this.Button切换.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Button切换.Name = "Button切换";
+            this.Button切换.Size = new System.Drawing.Size(48, 21);
+            this.Button切换.Text = "切换";
+            this.Button切换.ButtonClick += new System.EventHandler(this.Button切换_ButtonClick);
+            // 
+            // textBoxWithPlaceholder1
+            // 
+            this.textBoxWithPlaceholder1.Location = new System.Drawing.Point(490, 26);
+            this.textBoxWithPlaceholder1.Name = "textBoxWithPlaceholder1";
+            this.textBoxWithPlaceholder1.Placeholder = "输入用户名";
+            this.textBoxWithPlaceholder1.Size = new System.Drawing.Size(148, 21);
+            this.textBoxWithPlaceholder1.TabIndex = 14;
             // 
             // roundButton3
             // 
@@ -295,6 +348,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(900, 639);
+            this.Controls.Add(this.textBoxWithPlaceholder1);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.roundButton3);
             this.Controls.Add(this.iconButton4);
             this.Controls.Add(this.iconButton3);
@@ -314,6 +369,8 @@
             this.TransparencyKey = System.Drawing.Color.LightPink;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -343,6 +400,11 @@
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton1;
         private Rookie.Component.RoundButton roundButton3;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel Status网速;
+        private System.Windows.Forms.ToolStripDropDownButton DropDown网卡;
+        private System.Windows.Forms.ToolStripSplitButton Button切换;
+        private TextBoxWithPlaceholder textBoxWithPlaceholder1;
     }
 }
 

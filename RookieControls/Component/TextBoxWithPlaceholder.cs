@@ -1,7 +1,12 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
+
+/// <summary>
+/// 有占位文本的文本框
+/// </summary>
 public class TextBoxWithPlaceholder : TextBox
 {
     private const int EM_SETCUEBANNER = 0x1501;
@@ -10,6 +15,12 @@ public class TextBoxWithPlaceholder : TextBox
     private static extern Int32 SendMessage(IntPtr hWnd, int msg, int wParam, [MarshalAs(UnmanagedType.LPWStr)] string lParam);
 
     private string placeholder = string.Empty;
+
+    /// <summary>
+    /// 占位文本
+    /// </summary>
+    [Browsable(true), DefaultValue(""), Description("占位文本")]
+    [Category("Appearance")]
     public string Placeholder
     {
         get { return placeholder; }
@@ -20,22 +31,4 @@ public class TextBoxWithPlaceholder : TextBox
         }
     }
 
-
-    //private void Form1_Load(object sender, EventArgs e)
-    //{
-    //    textBox1.Text = "此处是一些提示内容...";
-    //    textBox1.LostFocus += TextBox1_LostFocus;
-    //    textBox1.GotFocus += TextBox1_GotFocus;
-    //}
-
-    //private void TextBox1_GotFocus(object sender, EventArgs e)
-    //{
-    //    textBox1.Text = "";
-    //}
-
-    //private void TextBox1_LostFocus(object sender, EventArgs e)
-    //{
-    //    if (string.IsNullOrWhiteSpace(textBox1.Text))
-    //        textBox1.Text = "此处是一些提示内容...";
-    //}
 }
