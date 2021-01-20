@@ -2,12 +2,21 @@
 ### RookieControls
 菜鸟学建自定义控件
 
-### 项目介绍
-Null
+### 组件
+TextBoxWithPlaceholder, 有占位文本的文本框
+DataGridViewHiDpi, 支持HiDpi的DataGridView
+Toast, 右下角信息浮动框
+RoundButton, 圆角/方形播放按钮,支持渐变和鼠标焦点
+InputNumber, 数字输入框
+
+### 截图
+
+![densen2014_RookieControls](https://user-images.githubusercontent.com/8428709/105117342-9f74eb00-5acc-11eb-88f1-11b8b2de165e.jpg)
 
 ### 0120
 - **修改** 例程修整
 - **增加** TextBoxWithPlaceholder ,有占位文本的文本框
+- **增加** DataGridViewHiDpi, 支持HiDpi的DGV 
 - **增加** RoundButton 添加方形属性
 - **增加** Toast 添加直接初始化显示的方法,显示后主动返回现在窗体
 
