@@ -28,15 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.inputNumber1 = new Rookie.Component.InputNumber();
-            this.roundButton4 = new Rookie.Component.RoundButton();
-            this.roundButton2 = new Rookie.Component.RoundButton();
-            this.roundButton1 = new Rookie.Component.RoundButton();
-            this.dataGridViewHiDpi1 = new Rookie.Component.DataGridViewHiDpi();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,99 +35,24 @@
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.roundButtonToast消息提示框 = new Rookie.Component.RoundButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).BeginInit();
+            this.roundButton3 = new Rookie.Component.RoundButton();
+            this.dataGridViewHiDpi1 = new Rookie.Component.DataGridViewHiDpi();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.inputNumber1 = new Rookie.Component.InputNumber();
+            this.roundButton4 = new Rookie.Component.RoundButton();
+            this.roundButtonToast消息提示框 = new Rookie.Component.RoundButton();
+            this.roundButton2 = new Rookie.Component.RoundButton();
+            this.roundButton1 = new Rookie.Component.RoundButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // inputNumber1
-            // 
-            this.inputNumber1.Location = new System.Drawing.Point(20, 14);
-            this.inputNumber1.Margin = new System.Windows.Forms.Padding(1);
-            this.inputNumber1.Name = "inputNumber1";
-            this.inputNumber1.Size = new System.Drawing.Size(110, 39);
-            this.inputNumber1.TabIndex = 0;
-            // 
-            // roundButton4
-            // 
-            this.roundButton4.ButtonCenterColorEnd = System.Drawing.Color.Aqua;
-            this.roundButton4.ButtonCenterColorStart = System.Drawing.Color.Violet;
-            this.roundButton4.DistanceToBorder = 4;
-            this.roundButton4.FocusBorderColor = System.Drawing.Color.OrangeRed;
-            this.roundButton4.Font = new System.Drawing.Font("Arial", 16F);
-            this.roundButton4.IconColor2 = System.Drawing.Color.Red;
-            this.roundButton4.Location = new System.Drawing.Point(778, 13);
-            this.roundButton4.Name = "roundButton4";
-            this.roundButton4.Size = new System.Drawing.Size(111, 113);
-            this.roundButton4.TabIndex = 4;
-            this.roundButton4.Text = "roundButton4";
-            this.roundButton4.UseVisualStyleBackColor = true;
-            this.roundButton4.Click += new System.EventHandler(this.roundButton4_Click);
-            // 
-            // roundButton2
-            // 
-            this.roundButton2.DistanceToBorder = 4;
-            this.roundButton2.Font = new System.Drawing.Font("幼圆", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.roundButton2.IconColor2 = System.Drawing.Color.Red;
-            this.roundButton2.IsShowIcon = false;
-            this.roundButton2.Location = new System.Drawing.Point(792, 262);
-            this.roundButton2.Name = "roundButton2";
-            this.roundButton2.Size = new System.Drawing.Size(96, 67);
-            this.roundButton2.TabIndex = 2;
-            this.roundButton2.Text = "早餐";
-            this.roundButton2.UseVisualStyleBackColor = true;
-            this.roundButton2.Click += new System.EventHandler(this.roundButton2_Click);
-            // 
-            // roundButton1
-            // 
-            this.roundButton1.DistanceToBorder = 4;
-            this.roundButton1.Font = new System.Drawing.Font("Arial", 16F);
-            this.roundButton1.IconColor2 = System.Drawing.Color.Red;
-            this.roundButton1.Location = new System.Drawing.Point(786, 138);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(102, 105);
-            this.roundButton1.TabIndex = 1;
-            this.roundButton1.Text = "roundButton1";
-            this.roundButton1.UseVisualStyleBackColor = true;
-            // 
-            // dataGridViewHiDpi1
-            // 
-            this.dataGridViewHiDpi1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewHiDpi1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
-            this.dataGridViewHiDpi1.DpiRate = 0D;
-            this.dataGridViewHiDpi1.Location = new System.Drawing.Point(75, 120);
-            this.dataGridViewHiDpi1.Name = "dataGridViewHiDpi1";
-            this.dataGridViewHiDpi1.RowTemplate.Height = 23;
-            this.dataGridViewHiDpi1.Size = new System.Drawing.Size(542, 253);
-            this.dataGridViewHiDpi1.TabIndex = 5;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Column4";
-            this.Column4.Name = "Column4";
             // 
             // dataGridView1
             // 
@@ -190,6 +106,150 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "支持HiDpi的DGV";
             // 
+            // iconButton4
+            // 
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Heart;
+            this.iconButton4.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton4.IconSize = 32;
+            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton4.Location = new System.Drawing.Point(383, 14);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Size = new System.Drawing.Size(70, 43);
+            this.iconButton4.TabIndex = 11;
+            this.iconButton4.Text = "点我";
+            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton4.UseVisualStyleBackColor = true;
+            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Heart;
+            this.iconButton3.IconColor = System.Drawing.Color.DarkOrange;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.IconSize = 32;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.Location = new System.Drawing.Point(307, 14);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(70, 43);
+            this.iconButton3.TabIndex = 10;
+            this.iconButton3.Text = "点我";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton3.UseVisualStyleBackColor = true;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Heart;
+            this.iconButton2.IconColor = System.Drawing.Color.Red;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 32;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(231, 14);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(70, 43);
+            this.iconButton2.TabIndex = 9;
+            this.iconButton2.Text = "点我";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Heart;
+            this.iconButton1.IconColor = System.Drawing.Color.Green;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 32;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(155, 14);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(70, 43);
+            this.iconButton1.TabIndex = 8;
+            this.iconButton1.Text = "点我";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // roundButton3
+            // 
+            this.roundButton3.BorderWidth = 2;
+            this.roundButton3.ButtonCenterColorEnd = System.Drawing.Color.Orange;
+            this.roundButton3.ButtonCenterColorStart = System.Drawing.Color.Gold;
+            this.roundButton3.DistanceToBorder = 4;
+            this.roundButton3.Font = new System.Drawing.Font("幼圆", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.roundButton3.IconColor2 = System.Drawing.Color.Red;
+            this.roundButton3.IsRectangle = true;
+            this.roundButton3.IsShowIcon = false;
+            this.roundButton3.Location = new System.Drawing.Point(750, 521);
+            this.roundButton3.Name = "roundButton3";
+            this.roundButton3.Size = new System.Drawing.Size(79, 54);
+            this.roundButton3.TabIndex = 12;
+            this.roundButton3.Text = "查询";
+            this.roundButton3.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewHiDpi1
+            // 
+            this.dataGridViewHiDpi1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewHiDpi1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            this.dataGridViewHiDpi1.DpiRate = 0D;
+            this.dataGridViewHiDpi1.Location = new System.Drawing.Point(75, 120);
+            this.dataGridViewHiDpi1.Name = "dataGridViewHiDpi1";
+            this.dataGridViewHiDpi1.RowTemplate.Height = 23;
+            this.dataGridViewHiDpi1.Size = new System.Drawing.Size(542, 253);
+            this.dataGridViewHiDpi1.TabIndex = 5;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Column2";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Column3";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Column4";
+            this.Column4.Name = "Column4";
+            // 
+            // inputNumber1
+            // 
+            this.inputNumber1.Location = new System.Drawing.Point(20, 14);
+            this.inputNumber1.Margin = new System.Windows.Forms.Padding(1);
+            this.inputNumber1.Name = "inputNumber1";
+            this.inputNumber1.Size = new System.Drawing.Size(110, 39);
+            this.inputNumber1.TabIndex = 0;
+            // 
+            // roundButton4
+            // 
+            this.roundButton4.ButtonCenterColorEnd = System.Drawing.Color.Aqua;
+            this.roundButton4.ButtonCenterColorStart = System.Drawing.Color.Violet;
+            this.roundButton4.DistanceToBorder = 4;
+            this.roundButton4.FocusBorderColor = System.Drawing.Color.OrangeRed;
+            this.roundButton4.Font = new System.Drawing.Font("Arial", 16F);
+            this.roundButton4.IconColor2 = System.Drawing.Color.Red;
+            this.roundButton4.Location = new System.Drawing.Point(778, 13);
+            this.roundButton4.Name = "roundButton4";
+            this.roundButton4.Size = new System.Drawing.Size(111, 113);
+            this.roundButton4.TabIndex = 4;
+            this.roundButton4.Text = "roundButton4";
+            this.roundButton4.UseVisualStyleBackColor = true;
+            this.roundButton4.Click += new System.EventHandler(this.roundButton4_Click);
+            // 
             // roundButtonToast消息提示框
             // 
             this.roundButtonToast消息提示框.DistanceToBorder = 4;
@@ -203,77 +263,31 @@
             this.roundButtonToast消息提示框.Text = "Toast消息提示框";
             this.roundButtonToast消息提示框.UseVisualStyleBackColor = true;
             // 
-            // iconButton4
+            // roundButton2
             // 
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton4.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Heart;
-            this.iconButton4.IconColor = System.Drawing.Color.DeepSkyBlue;
-            this.iconButton4.IconSize = 32;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(383, 14);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Rotation = 0D;
-            this.iconButton4.Size = new System.Drawing.Size(70, 43);
-            this.iconButton4.TabIndex = 11;
-            this.iconButton4.Text = "点我";
-            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton4.UseVisualStyleBackColor = true;
-            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
+            this.roundButton2.DistanceToBorder = 4;
+            this.roundButton2.Font = new System.Drawing.Font("幼圆", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.roundButton2.IconColor2 = System.Drawing.Color.Red;
+            this.roundButton2.IsShowIcon = false;
+            this.roundButton2.Location = new System.Drawing.Point(792, 262);
+            this.roundButton2.Name = "roundButton2";
+            this.roundButton2.Size = new System.Drawing.Size(96, 67);
+            this.roundButton2.TabIndex = 2;
+            this.roundButton2.Text = "早餐";
+            this.roundButton2.UseVisualStyleBackColor = true;
+            this.roundButton2.Click += new System.EventHandler(this.roundButton2_Click);
             // 
-            // iconButton3
+            // roundButton1
             // 
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Heart;
-            this.iconButton3.IconColor = System.Drawing.Color.DarkOrange;
-            this.iconButton3.IconSize = 32;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(307, 14);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Rotation = 0D;
-            this.iconButton3.Size = new System.Drawing.Size(70, 43);
-            this.iconButton3.TabIndex = 10;
-            this.iconButton3.Text = "点我";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton3.UseVisualStyleBackColor = true;
-            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton2.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Heart;
-            this.iconButton2.IconColor = System.Drawing.Color.Red;
-            this.iconButton2.IconSize = 32;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(231, 14);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Rotation = 0D;
-            this.iconButton2.Size = new System.Drawing.Size(70, 43);
-            this.iconButton2.TabIndex = 9;
-            this.iconButton2.Text = "点我";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton2.UseVisualStyleBackColor = true;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Heart;
-            this.iconButton1.IconColor = System.Drawing.Color.Green;
-            this.iconButton1.IconSize = 32;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(155, 14);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Rotation = 0D;
-            this.iconButton1.Size = new System.Drawing.Size(70, 43);
-            this.iconButton1.TabIndex = 8;
-            this.iconButton1.Text = "点我";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.roundButton1.DistanceToBorder = 4;
+            this.roundButton1.Font = new System.Drawing.Font("Arial", 16F);
+            this.roundButton1.IconColor2 = System.Drawing.Color.Red;
+            this.roundButton1.Location = new System.Drawing.Point(786, 138);
+            this.roundButton1.Name = "roundButton1";
+            this.roundButton1.Size = new System.Drawing.Size(102, 105);
+            this.roundButton1.TabIndex = 1;
+            this.roundButton1.Text = "roundButton1";
+            this.roundButton1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -281,6 +295,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(900, 639);
+            this.Controls.Add(this.roundButton3);
             this.Controls.Add(this.iconButton4);
             this.Controls.Add(this.iconButton3);
             this.Controls.Add(this.iconButton2);
@@ -298,8 +313,8 @@
             this.Text = "Form1";
             this.TransparencyKey = System.Drawing.Color.LightPink;
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -327,6 +342,7 @@
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private Rookie.Component.RoundButton roundButton3;
     }
 }
 

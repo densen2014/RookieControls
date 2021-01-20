@@ -28,9 +28,16 @@ namespace Rookie.Component
         /// <summary>
         /// 设置或获取圆形按钮的圆的边距离方框边的距离
         /// </summary>
-        [Browsable(true), DefaultValue(2)]
+        [Browsable(true), DefaultValue(2), Description("设置或获取圆形按钮的圆的边距离方框边的距离")]
         [Category("Appearance")]
         public int DistanceToBorder { get; set; }
+
+        /// <summary>
+        /// 是否方形
+        /// </summary>
+        [Browsable(true), DefaultValue(typeof(bool), "false"), Description("是否方形")]
+        [Category("Appearance")]
+        public bool IsRectangle { get; set; }
 
         #endregion
 
@@ -39,7 +46,7 @@ namespace Rookie.Component
         /// <summary>
         /// 获取或设置按钮主体颜色
         /// </summary>
-        /// <value>The color of the focus.</value>
+        /// <value>按钮主体渐变起始颜色.</value>
         [Browsable(true), DefaultValue(typeof(Color), "DodgerBlue"), Description("按钮主体渐变起始颜色")]
         [Category("Appearance")]
         public Color ButtonCenterColorEnd { get; set; }
@@ -47,6 +54,7 @@ namespace Rookie.Component
         /// <summary>
         /// 获取或设置按钮主体颜色
         /// </summary>
+        /// <value>按钮主体渐变终点颜色.</value>
         [Browsable(true), DefaultValue(typeof(Color), "CornflowerBlue"), Description("按钮主体渐变终点颜色")]
         [Category("Appearance")]
         public Color ButtonCenterColorStart { get; set; }
@@ -86,12 +94,16 @@ namespace Rookie.Component
         [Category("Appearance")]
         override public string Text { get; set; }
 
-
+        /// <summary>
+        /// 显示控件中文本的字体
+        /// </summary>
         [Browsable(true), DefaultValue(typeof(Font),  "华文琥珀,16pt"), Description("用于显示控件中文本的字体。")]
         [Category("Appearance")]
         override public Font Font { get; set; }
-       
-        
+
+        /// <summary>
+        /// 显示控件中文本的颜色
+        /// </summary>
         [Browsable(true), DefaultValue(typeof(Color), "Black"), Description("显示控件中文本的颜色。")]
         [Category("Appearance")]
         override public Color ForeColor { get; set; }
@@ -194,7 +206,14 @@ namespace Rookie.Component
 
             var brush = new LinearGradientBrush(rect, ButtonCenterColorStart, ButtonCenterColorEnd, GradientAngle);
 
-            PaintShape(g, brush, rect);//绘制按钮中心区域
+            if (IsRectangle)
+            {
+                PaintShape(g, brush, new Rectangle((int)rect.X, (int)rect.Y, (int)rect.Width, (int)rect.Height));
+            }
+            else
+            {
+                PaintShape(g, brush, rect);//绘制按钮中心区域
+            }
 
             DrawBorder(g);//绘制边框
 
@@ -352,7 +371,14 @@ namespace Rookie.Component
                 brush = new LinearGradientBrush(rect, Color.FromArgb(60, Color.White),
               Color.FromArgb(60, Color.White), GradientAngle);
             }
-            PaintShape(g, brush, highlightRect);
+            if (IsRectangle)
+            {
+                PaintShape(g, brush, new Rectangle((int)highlightRect.X, (int)highlightRect.Y, (int)highlightRect.Width, (int)highlightRect.Height));
+            }
+            else
+            {
+                PaintShape(g, brush, highlightRect);
+            }
         }
 
         /// <summary>
@@ -366,11 +392,17 @@ namespace Rookie.Component
             {
                 p.Color = FocusBorderColor;//外圈获取焦点后的颜色
                 p.Width = BorderWidth;
-                PaintShape(g, p, rect);
             }
             else
             {
                 p.Width = BorderWidth;
+            }
+            if (IsRectangle)
+            {
+                PaintShape(g, p, new Rectangle((int)rect.X, (int)rect.Y, (int)rect.Width, (int)rect.Height));
+            }
+            else
+            {
                 PaintShape(g, p, rect);
             }
 
@@ -386,7 +418,35 @@ namespace Rookie.Component
             pressedRect.Inflate(-2, -2);
             Brush brush = new LinearGradientBrush(rect, Color.FromArgb(60, Color.White),
                 Color.FromArgb(60, Color.White), GradientAngle);
-            PaintShape(g, brush, pressedRect);
+            if (IsRectangle)
+            {
+                PaintShape(g, brush, new Rectangle((int)pressedRect.X, (int)pressedRect.Y, (int)pressedRect.Width, (int)pressedRect.Height));
+            }
+            else
+            {
+                PaintShape(g, brush, pressedRect);
+            }
+        }
+
+        /// <summary>
+        /// 绘制矩形
+        /// </summary>
+        /// <param name="g">Graphics对象</param>
+        /// <param name="pen">Pen对象</param>
+        /// <param name="rect">RectangleF对象</param>
+        protected virtual void PaintShape(Graphics g, Pen pen, Rectangle rect)
+        {
+            g.DrawRectangle(pen, rect); 
+        }
+        /// <summary>
+        /// 绘制矩形
+        /// </summary>
+        /// <param name="g">Graphics对象</param>
+        /// <param name="brush">Brush对象</param>
+        /// <param name="rect">Rectangle对象</param>
+        protected virtual void PaintShape(Graphics g, Brush brush, Rectangle rect)
+        {
+            g.FillRectangle(brush, rect);
         }
 
         /// <summary>
