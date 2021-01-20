@@ -8,6 +8,7 @@
 - Toast, 右下角信息浮动框
 - RoundButton, 圆角/方形播放按钮,支持渐变和鼠标焦点
 - InputNumber, 数字输入框
+- Monitor, 网速监控
 
 ### 截图
 
