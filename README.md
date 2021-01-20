@@ -10,6 +10,8 @@ Null
 - **增加** TextBoxWithPlaceholder ,有占位文本的文本框
 - **增加** RoundButton 添加方形属性
 - **增加** Toast 添加直接初始化显示的方法,显示后主动返回现在窗体
+
+
           Toast 添加直接初始化显示的方法
           new Toast($"切换中文.", AlertType.Warning);
 
