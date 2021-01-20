@@ -5,8 +5,17 @@
 ### 项目介绍
 Null
 
-### Nuget 包安装
-https://www.nuget.org/packages/RookieControls/
+### 0120
+- **修改** 例程修整
+- **增加** TextBoxWithPlaceholder ,有占位文本的文本框
+- **增加** RoundButton 添加方形属性
+- **增加** Toast 添加直接初始化显示的方法,显示后主动返回现在窗体
+          Toast 添加直接初始化显示的方法
+          new Toast($"切换中文.", AlertType.Warning);
+
+          添加 Toast 显示后主动返回现在窗体demo.
+          new Toast($"切换中文.", AlertType.Warning);
+          Activate();
 
 ### 1001
 - **增加** Toast, 图标使用 https://fontawesome.com/icons?d=gallery
