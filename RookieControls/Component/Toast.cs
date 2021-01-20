@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 
+namespace Rookie.Component
+{
     // 警告框的行为（显示，停留，退出）
     public enum AlertFormAction
     {
@@ -30,6 +32,11 @@ using FontAwesome.Sharp;
         public Toast()
         {
             InitializeComponent();
+        }
+        public Toast(string message, AlertType type)
+        {
+            InitializeComponent();
+            Show(message, type);
         }
 
         private int x, y;
@@ -79,19 +86,19 @@ using FontAwesome.Sharp;
             switch (type)
             {
                 case AlertType.Info:
-                    this.pictureBox1.Image = IconChar.Info.ToBitmap(64, Color.White);
+                    this.pictureBox1.Image = IconChar.Info.ToBitmap(Color.White);
                     this.BackColor = Color.RoyalBlue;
                     break;
                 case AlertType.Success:
-                    this.pictureBox1.Image = IconChar.AlignLeft.ToBitmap(64, Color.White);  //Properties.Resources.success;
+                    this.pictureBox1.Image = IconChar.AlignLeft.ToBitmap(Color.White);  //Properties.Resources.success;
                     this.BackColor = Color.SeaGreen;
                     break;
                 case AlertType.Warning:
-                    this.pictureBox1.Image = IconChar.AlignCenter.ToBitmap(64, Color.White);  //Properties.Resources.warning;
+                    this.pictureBox1.Image = IconChar.AlignCenter.ToBitmap(Color.White);  //Properties.Resources.warning;
                     this.BackColor = Color.DarkOrange;
                     break;
                 case AlertType.Error:
-                    this.pictureBox1.Image = IconChar.CalendarMinus.ToBitmap(64, Color.White); //Properties.Resources.error;
+                    this.pictureBox1.Image = IconChar.CalendarMinus.ToBitmap(Color.White); //Properties.Resources.error;
                     this.BackColor = Color.DarkRed;
                     break;
                 default:
@@ -108,7 +115,7 @@ using FontAwesome.Sharp;
 
             // 设置程序每个打开的消息窗口的位置，超过10个就不做处理，这个可以根据自己的需求设定
             string fname;
-            for (int i = 1; i < 20; i++)
+            for (int i = 1; i < 10; i++)
             {
                 fname = "alert" + i.ToString();
                 Toast alert = (Toast)Application.OpenForms[fname];
@@ -144,7 +151,7 @@ using FontAwesome.Sharp;
             timer1.Interval = int.MaxValue;//警告框停留时间
             action = AlertFormAction.Close;
         }
- 
+
         private void AlertMessageForm_MouseLeave(object sender, EventArgs e)
         {
             this.Opacity = 1.0;
@@ -167,3 +174,4 @@ using FontAwesome.Sharp;
         }
 
     }
+}

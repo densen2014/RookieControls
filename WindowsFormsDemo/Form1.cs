@@ -6,7 +6,9 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using Rookie.Component;
 
 namespace WindowsFormsApp2
 {
@@ -24,7 +26,7 @@ namespace WindowsFormsApp2
         {
             this.DoubleBuffered = true;
             dataGridViewHiDpi1.HiDpi();
-            double DpiRate=  NativeMethods.GetDisplayScaleFactor(this.Handle)*100 ;
+            double DpiRate = NativeMethods.GetDisplayScaleFactor(this.Handle) * 100;
             this.Text = "DPI:" + DpiRate.ToString() + "%";
             for (int i = 0; i < 10; i++)
             {
@@ -47,46 +49,54 @@ namespace WindowsFormsApp2
 
         private void roundButton4_Click(object sender, EventArgs e)
         {
-           // new Form2().Show();
+            // new Form2().Show();
         }
 
         private void roundButtonToast消息提示框_Click(object sender, EventArgs e)
         {
-            var Toast = new Toast();
-            Toast.Show($"切换中文.", AlertType.Info);
 
-            var Toast2 = new Toast();
-            Toast2.Show($"切换中文.", AlertType.Warning);
+            Task.Run(() =>
+            {
+                Invoke(new Action(() =>
+                {
+                    var Toast = new Toast();
+                    Toast.Show($"切换中文.", AlertType.Info);
 
-            var Toast3 = new Toast();
-            Toast3.Show($"切换中文.", AlertType.Error);
+                    new Toast($"切换中文.", AlertType.Warning);
 
-            var Toast4 = new Toast();
-            Toast4.Show($"切换中文.", AlertType.Success);
+                    new Toast($"切换中文.", AlertType.Error);
+
+                    new Toast($"切换中文.", AlertType.Success);
+
+                    Activate();
+
+                }));
+            }
+            );
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            var Toast = new Toast();
-            Toast.Show("99级别,和太阳肩并肩", AlertType.Success);
+            new Toast("99级别,和太阳肩并肩", AlertType.Success);
+            Activate();
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            var Toast = new Toast();
-            Toast.Show("99级别,和太阳肩并肩", AlertType.Error);
+            new Toast("99级别,和太阳肩并肩", AlertType.Error);
+            Activate();
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
-            var Toast = new Toast();
-            Toast.Show("99级别,和太阳肩并肩", AlertType.Warning);
+            new Toast("99级别,和太阳肩并肩", AlertType.Warning);
+            Activate();
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
-            var Toast = new Toast();
-            Toast.Show("99级别,和太阳肩并肩", AlertType.Info);
+            new Toast("99级别,和太阳肩并肩", AlertType.Info);
+            Activate();
         }
     }
     public class Circle

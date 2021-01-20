@@ -1,4 +1,6 @@
-﻿    partial class Toast
+﻿namespace Rookie.Component
+{
+    partial class Toast
     {
         /// <summary>
         /// Required designer variable.
@@ -49,14 +51,15 @@
             // 
             // labelContent
             // 
-            this.labelContent.AutoSize = true;
+            this.labelContent.AutoEllipsis = true;
             this.labelContent.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelContent.ForeColor = System.Drawing.Color.White;
-            this.labelContent.Location = new System.Drawing.Point(59, 33);
+            this.labelContent.Location = new System.Drawing.Point(59, 8);
             this.labelContent.Name = "labelContent";
-            this.labelContent.Size = new System.Drawing.Size(63, 14);
+            this.labelContent.Size = new System.Drawing.Size(242, 60);
             this.labelContent.TabIndex = 1;
             this.labelContent.Text = "提示消息";
+            this.labelContent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox1
             // 
@@ -78,15 +81,15 @@
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(313, 77);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.labelContent);
             this.Controls.Add(this.buttonClose);
+            this.Controls.Add(this.labelContent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Toast";
             this.ShowInTaskbar = false;
             this.Text = "AlertMessageForm";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -97,3 +100,4 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
     }
+}
