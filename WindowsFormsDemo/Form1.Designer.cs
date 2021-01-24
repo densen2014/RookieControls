@@ -44,6 +44,8 @@
             this.DropDown网卡 = new System.Windows.Forms.ToolStripDropDownButton();
             this.Status网速 = new System.Windows.Forms.ToolStripStatusLabel();
             this.Button切换 = new System.Windows.Forms.ToolStripSplitButton();
+            this.启动ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.暂停ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBoxWithPlaceholder1 = new TextBoxWithPlaceholder();
             this.roundButton3 = new Rookie.Component.RoundButton();
             this.dataGridViewHiDpi1 = new Rookie.Component.DataGridViewHiDpi();
@@ -61,6 +63,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.启动ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).BeginInit();
@@ -216,18 +219,36 @@
             // Status网速
             // 
             this.Status网速.Name = "Status网速";
-            this.Status网速.Size = new System.Drawing.Size(131, 18);
-            this.Status网速.Text = "toolStripStatusLabel1";
+            this.Status网速.Size = new System.Drawing.Size(32, 18);
+            this.Status网速.Text = "网速";
             // 
             // Button切换
             // 
             this.Button切换.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.Button切换.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.启动ToolStripMenuItem,
+            this.暂停ToolStripMenuItem,
+            this.启动ToolStripMenuItem1});
             this.Button切换.Image = ((System.Drawing.Image)(resources.GetObject("Button切换.Image")));
             this.Button切换.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Button切换.Name = "Button切换";
             this.Button切换.Size = new System.Drawing.Size(48, 21);
-            this.Button切换.Text = "切换";
+            this.Button切换.Text = "停止";
             this.Button切换.ButtonClick += new System.EventHandler(this.Button切换_ButtonClick);
+            // 
+            // 启动ToolStripMenuItem
+            // 
+            this.启动ToolStripMenuItem.Name = "启动ToolStripMenuItem";
+            this.启动ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.启动ToolStripMenuItem.Text = "继续";
+            this.启动ToolStripMenuItem.Click += new System.EventHandler(this.启动ToolStripMenuItem_Click);
+            // 
+            // 暂停ToolStripMenuItem
+            // 
+            this.暂停ToolStripMenuItem.Name = "暂停ToolStripMenuItem";
+            this.暂停ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.暂停ToolStripMenuItem.Text = "暂停";
+            this.暂停ToolStripMenuItem.Click += new System.EventHandler(this.暂停ToolStripMenuItem_Click);
             // 
             // textBoxWithPlaceholder1
             // 
@@ -243,7 +264,7 @@
             this.roundButton3.ButtonCenterColorEnd = System.Drawing.Color.Orange;
             this.roundButton3.ButtonCenterColorStart = System.Drawing.Color.Gold;
             this.roundButton3.DistanceToBorder = 4;
-            this.roundButton3.Font = new System.Drawing.Font("幼圆", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.roundButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.roundButton3.IconColor2 = System.Drawing.Color.Red;
             this.roundButton3.IsRectangle = true;
             this.roundButton3.IsShowIcon = false;
@@ -316,7 +337,7 @@
             // roundButtonToast消息提示框
             // 
             this.roundButtonToast消息提示框.DistanceToBorder = 4;
-            this.roundButtonToast消息提示框.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.roundButtonToast消息提示框.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.roundButtonToast消息提示框.IconColor2 = System.Drawing.Color.Red;
             this.roundButtonToast消息提示框.IsShowIcon = false;
             this.roundButtonToast消息提示框.Location = new System.Drawing.Point(61, 261);
@@ -329,7 +350,7 @@
             // roundButton2
             // 
             this.roundButton2.DistanceToBorder = 4;
-            this.roundButton2.Font = new System.Drawing.Font("幼圆", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.roundButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.roundButton2.IconColor2 = System.Drawing.Color.Red;
             this.roundButton2.IsShowIcon = false;
             this.roundButton2.Location = new System.Drawing.Point(39, 160);
@@ -412,6 +433,13 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "数字输入框 InputNumber";
             // 
+            // 启动ToolStripMenuItem1
+            // 
+            this.启动ToolStripMenuItem1.Name = "启动ToolStripMenuItem1";
+            this.启动ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.启动ToolStripMenuItem1.Text = "启动";
+            this.启动ToolStripMenuItem1.Click += new System.EventHandler(this.启动ToolStripMenuItem1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -477,6 +505,9 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.ToolStripMenuItem 启动ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 暂停ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 启动ToolStripMenuItem1;
     }
 }
 

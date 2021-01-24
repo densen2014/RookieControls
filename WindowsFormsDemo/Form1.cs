@@ -23,14 +23,13 @@ namespace WindowsFormsApp2
 
         List<Color> pColors = new List<Color>() { Color.Red, Color.Blue, Color.Yellow };
         List<Point> posPoint = new List<Point>() { new Point(20, 20), new Point(40, 30) };
-        
-        Monitor.MonitorNetwork speed;
-        private CancellationTokenSource CancelTokenSource { get; set; }
+
 
         private void Form1_Closing(object sender, FormClosingEventArgs e)
         {
             CancelTokenSource.Cancel();
-            speed.Close(); 
+            speed.Close();
+            CancelTokenSource?.Dispose();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -45,33 +44,80 @@ namespace WindowsFormsApp2
             }
             this.roundButtonToast消息提示框.Click += new System.EventHandler(this.roundButtonToast消息提示框_Click);
 
+            OnStartMonitorNetwork();
+        }
 
-            #region 网速
-            Task.Run(() =>
+        #region 网速
+
+        string netCardDescription;
+        Monitor.MonitorNetwork speed;
+        private CancellationTokenSource CancelTokenSource { get; set; }
+        private CancellationToken token ;
+        ManualResetEvent resetEvent = new ManualResetEvent(true);
+        private void OnStartMonitorNetwork()
+        {
+            speed = new Monitor.MonitorNetwork(netCardDescription ?? "Intel(R) Ethernet Connection (2) I219-V");
+            //speed = new Monitor.MonitorNetwork("Hyper-V Virtual Ethernet Adapter #6");
+            //speed = new Monitor.MonitorNetwork("Hyper-V Virtual Ethernet Adapter");
+            if (DropDown网卡.DropDownItems.Count == 0)
+            {
+                var niclist = speed.NicList();
+                foreach (var item in niclist)
                 {
-                    CancelTokenSource = new CancellationTokenSource();
-                    speed = new Monitor.MonitorNetwork("Hyper-V Virtual Ethernet Adapter #6");
-                    var niclist = speed.NicList();
-                    foreach (var item in niclist) Invoke(new Action(() => DropDown网卡.DropDownItems.Add(item))); 
-                    speed.Start();
-                    Task.Run(async () =>
-                    {
-                        do
-                        {
-                            try
-                            {
-                                await Task.Delay(1000, CancelTokenSource.Token);
-                                Invoke(new Action(() => Status网速.Text = $"上{speed.UpSpeed}/下{speed.DownSpeed}/总{speed.AllTraffic}"));
-                            }
-                            finally { } 
-                        } while (!CancelTokenSource.IsCancellationRequested);
+                    Invoke(new Action(() => DropDown网卡.DropDownItems.Add(item, null, onclick网卡)));
+                }
+            }
+            if (string.IsNullOrEmpty(netCardDescription)) return;
+            speed.Start();
 
-                    });
-                });
-            #endregion
+            CancelTokenSource = new CancellationTokenSource();
+            token = CancelTokenSource.Token;
+            CancelTokenSource.Token.Register(() => {
+                Console.WriteLine("挖槽，线程被干掉了~！");
+            });
+            Task.Run(async () =>
+            {
+                do
+                {
+                    try
+                    {
+                        await Task.Delay(1000);
+                        resetEvent.WaitOne();
+                        Invoke(new Action(() => Status网速.Text = $"上{speed.UpSpeed}/下{speed.DownSpeed}/总{speed.AllTraffic}"));
+                    }
+                    finally { }
+                } while (!CancelTokenSource.IsCancellationRequested);
+
+            }, token);
         }
 
 
+        private void onclick网卡(object sender, EventArgs e)
+        {
+            DropDown网卡.Text = ((ToolStripItem)sender).Text;
+            netCardDescription = ((ToolStripItem)sender).Text;
+            OnStartMonitorNetwork();
+        }
+        private void Button切换_ButtonClick(object sender, EventArgs e)
+        {
+            CancelTokenSource.Cancel();
+        }
+
+        private void 启动ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            CancelTokenSource.Cancel();
+            OnStartMonitorNetwork();
+        }
+        private void 启动ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            resetEvent.Set();
+        }
+
+        private void 暂停ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            resetEvent.Reset();
+        }
+        #endregion
         private List<Circle> Circles = new List<Circle>();
         private Circle circle = new Circle();
 
@@ -133,10 +179,21 @@ namespace WindowsFormsApp2
             Activate();
         }
 
-        private void Button切换_ButtonClick(object sender, EventArgs e)
-        {
 
+        /// <summary>
+        /// Dispose 方法
+        /// </summary>
+        /// <param name="disposing"></param>
+        protected void Dispose2(bool disposing)
+        {
+            if (disposing)
+            {
+                CancelTokenSource?.Dispose();
+            }
+
+            base.Dispose(disposing);
         }
+
     }
     public class Circle
     {
