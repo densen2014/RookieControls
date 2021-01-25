@@ -27,9 +27,9 @@ namespace WindowsFormsApp2
 
         private void Form1_Closing(object sender, FormClosingEventArgs e)
         {
-            CancelTokenSource.Cancel();
-            speed.Close();
             CancelTokenSource?.Dispose();
+            CancelTokenSource = null;
+            speed.Close();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -81,12 +81,15 @@ namespace WindowsFormsApp2
                 {
                     try
                     {
-                        await Task.Delay(1000);
+                        await Task.Delay(1000, CancelTokenSource?.Token ?? new CancellationToken(true));
                         resetEvent.WaitOne();
-                        Invoke(new Action(() => Status网速.Text = $"上{speed.UpSpeed}/下{speed.DownSpeed}/总{speed.AllTraffic}"));
+                        if (!(CancelTokenSource?.IsCancellationRequested ?? true))
+                        {
+                            Invoke(new Action(() => Status网速.Text = $"上{speed.UpSpeed}/下{speed.DownSpeed}/总{speed.AllTraffic}"));
+                        }
                     }
                     finally { }
-                } while (!CancelTokenSource.IsCancellationRequested);
+                } while (!(CancelTokenSource?.IsCancellationRequested ?? true));
 
             }, token);
         }
