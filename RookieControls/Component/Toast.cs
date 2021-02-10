@@ -26,6 +26,13 @@ namespace Rookie.Component
         Warning,
         Error
     }
+    //显示时间
+    public enum AlertDuration
+    {
+        Short,
+        Long,
+        NeverHide
+    }
 
     public partial class Toast : Form
     {
@@ -33,14 +40,16 @@ namespace Rookie.Component
         {
             InitializeComponent();
         }
-        public Toast(string message, AlertType type)
+        public Toast(string message, AlertType type, Form form = null, AlertDuration duration = AlertDuration.Short)
         {
             InitializeComponent();
-            Show(message, type);
+            Show(message, type, duration);
+            form?.Activate();
         }
 
         private int x, y;
         private AlertFormAction action;
+        private AlertDuration duration = AlertDuration.Short;
 
         //时钟控制窗口背景渐入和淡出
         private void timer1_Tick(object sender, EventArgs e)
@@ -56,7 +65,7 @@ namespace Rookie.Component
                     }
                     break;
                 case AlertFormAction.Wait:
-                    timer1.Interval = 3000;//警告框停留时间
+                    timer1.Interval = duration == AlertDuration.Short ? 3000 : (duration == AlertDuration.Long ? 1000 * 10 : 9999999);//警告框停留时间
                     action = AlertFormAction.Close;
                     break;
                 case AlertFormAction.Close:
@@ -108,8 +117,10 @@ namespace Rookie.Component
 
         //当有多个消息的时候，消息框会重叠在一起；多个消息时，需要将消息窗口按一定的规则排列，这里我们设置每个消息窗口间隔一定的距离
 
-        public void Show(string message, AlertType type)
+        public void Show(string message, AlertType type, AlertDuration duration = AlertDuration.Short)
         {
+            this.duration = duration;
+
             // 设置窗口启始位置
             this.StartPosition = FormStartPosition.Manual;
 
@@ -175,3 +186,4 @@ namespace Rookie.Component
 
     }
 }
+
