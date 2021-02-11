@@ -38,7 +38,7 @@
             // 
             this.numericUpDown1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.numericUpDown1.Location = new System.Drawing.Point(27, 7);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(65, 23);
             this.numericUpDown1.TabIndex = 0;
@@ -49,11 +49,11 @@
             // 
             this.UpButton.BorderWidth = 2;
             this.UpButton.DistanceToBorder = 4;
-            this.UpButton.Font = new System.Drawing.Font("幼圆", 13F);
+            this.UpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.UpButton.IconColor2 = System.Drawing.Color.Red;
             this.UpButton.IsShowIcon = false;
             this.UpButton.Location = new System.Drawing.Point(75, 2);
-            this.UpButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UpButton.Margin = new System.Windows.Forms.Padding(2);
             this.UpButton.Name = "UpButton";
             this.UpButton.Size = new System.Drawing.Size(28, 30);
             this.UpButton.TabIndex = 2;
@@ -65,11 +65,11 @@
             // 
             this.DownButton.BorderWidth = 2;
             this.DownButton.DistanceToBorder = 4;
-            this.DownButton.Font = new System.Drawing.Font("幼圆", 13F);
+            this.DownButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DownButton.IconColor2 = System.Drawing.Color.Red;
             this.DownButton.IsShowIcon = false;
             this.DownButton.Location = new System.Drawing.Point(2, 2);
-            this.DownButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DownButton.Margin = new System.Windows.Forms.Padding(2);
             this.DownButton.Name = "DownButton";
             this.DownButton.Size = new System.Drawing.Size(28, 30);
             this.DownButton.TabIndex = 3;
@@ -84,7 +84,7 @@
             this.Controls.Add(this.DownButton);
             this.Controls.Add(this.UpButton);
             this.Controls.Add(this.numericUpDown1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "InputNumber";
             this.Size = new System.Drawing.Size(107, 34);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
