@@ -14,7 +14,7 @@ namespace Rookie.Component
         /// <summary>
         /// 获取或设置按钮主体颜色渐变方向
         /// </summary>
-        [Browsable(true), DefaultValue(1), Description("DPI放大率")]
+        [Browsable(true), DefaultValue(1), Description("DPI放大率,0=自动")]
         [Category("Appearance")]
         public double DpiRate { get; set; }
 
@@ -37,7 +37,7 @@ namespace Rookie.Component
         }
         public void HiDpi()
         {
-            DpiRate = NativeMethods.GetDisplayScaleFactor(this.Handle);
+            DpiRate = DpiRate==0? NativeMethods.GetDisplayScaleFactor(this.Handle): DpiRate;
             this.ColumnHeadersHeight = (int)(this.ColumnHeadersHeight * DpiRate);
             this.RowHeadersWidth = (int)(this.RowHeadersWidth * DpiRate);
             this.RowTemplate.Height = (int)(this.RowTemplate.Height * DpiRate);
