@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>$id$</id>
-    <version>$version$</version>
+    <version>0.1.4</version>
     <title>$title$</title>
     <authors>Alex Chow</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -17,7 +17,7 @@
     <!-- 定义当前 NuGet Package 对其他第三方 Package 的依赖 -->
     <dependencies>
       <group targetFramework=".NETFramework4.0">
-      <dependency id="FontAwesome.Sharp" version="5.4.1" />
+      <dependency id="FontAwesome.Sharp" version="5.15.3" />
       </group>
     </dependencies>
    </metadata>
