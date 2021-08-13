@@ -46,32 +46,33 @@
             this.Button切换 = new System.Windows.Forms.ToolStripSplitButton();
             this.启动ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.暂停ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBoxWithPlaceholder1 = new TextBoxWithPlaceholder();
-            this.roundButton3 = new Rookie.Component.RoundButton();
-            this.dataGridViewHiDpi1 = new Rookie.Component.DataGridViewHiDpi();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.inputNumber1 = new Rookie.Component.InputNumber();
-            this.roundButton4 = new Rookie.Component.RoundButton();
-            this.roundButtonToast消息提示框 = new Rookie.Component.RoundButton();
-            this.roundButton2 = new Rookie.Component.RoundButton();
-            this.roundButton1 = new Rookie.Component.RoundButton();
+            this.启动ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.启动ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.inputNumber1 = new Rookie.Component.InputNumber();
+            this.dataGridViewHiDpi1 = new Rookie.Component.DataGridViewHiDpi();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelCN1 = new Rookie.Component.LabelCN();
+            this.roundButton1 = new Rookie.Component.RoundButton();
+            this.roundButton4 = new Rookie.Component.RoundButton();
+            this.roundButton2 = new Rookie.Component.RoundButton();
+            this.roundButtonToast消息提示框 = new Rookie.Component.RoundButton();
+            this.roundButton3 = new Rookie.Component.RoundButton();
+            this.textBoxWithPlaceholder1 = new TextBoxWithPlaceholder();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -239,41 +240,103 @@
             // 启动ToolStripMenuItem
             // 
             this.启动ToolStripMenuItem.Name = "启动ToolStripMenuItem";
-            this.启动ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.启动ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.启动ToolStripMenuItem.Text = "继续";
             this.启动ToolStripMenuItem.Click += new System.EventHandler(this.启动ToolStripMenuItem_Click);
             // 
             // 暂停ToolStripMenuItem
             // 
             this.暂停ToolStripMenuItem.Name = "暂停ToolStripMenuItem";
-            this.暂停ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.暂停ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.暂停ToolStripMenuItem.Text = "暂停";
             this.暂停ToolStripMenuItem.Click += new System.EventHandler(this.暂停ToolStripMenuItem_Click);
             // 
-            // textBoxWithPlaceholder1
+            // 启动ToolStripMenuItem1
             // 
-            this.textBoxWithPlaceholder1.Location = new System.Drawing.Point(30, 28);
-            this.textBoxWithPlaceholder1.Name = "textBoxWithPlaceholder1";
-            this.textBoxWithPlaceholder1.Placeholder = "输入用户名";
-            this.textBoxWithPlaceholder1.Size = new System.Drawing.Size(148, 21);
-            this.textBoxWithPlaceholder1.TabIndex = 14;
+            this.启动ToolStripMenuItem1.Name = "启动ToolStripMenuItem1";
+            this.启动ToolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
+            this.启动ToolStripMenuItem1.Text = "启动";
+            this.启动ToolStripMenuItem1.Click += new System.EventHandler(this.启动ToolStripMenuItem1_Click);
             // 
-            // roundButton3
+            // groupBox1
             // 
-            this.roundButton3.BorderWidth = 2;
-            this.roundButton3.ButtonCenterColorEnd = System.Drawing.Color.Orange;
-            this.roundButton3.ButtonCenterColorStart = System.Drawing.Color.Gold;
-            this.roundButton3.DistanceToBorder = 4;
-            this.roundButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.roundButton3.IconColor2 = System.Drawing.Color.Red;
-            this.roundButton3.IsRectangle = true;
-            this.roundButton3.IsShowIcon = false;
-            this.roundButton3.Location = new System.Drawing.Point(184, 160);
-            this.roundButton3.Name = "roundButton3";
-            this.roundButton3.Size = new System.Drawing.Size(79, 54);
-            this.roundButton3.TabIndex = 12;
-            this.roundButton3.Text = "查询";
-            this.roundButton3.UseVisualStyleBackColor = true;
+            this.groupBox1.Controls.Add(this.iconButton4);
+            this.groupBox1.Controls.Add(this.iconButton1);
+            this.groupBox1.Controls.Add(this.iconButton2);
+            this.groupBox1.Controls.Add(this.iconButton3);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(349, 81);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "iconButton(FontAwesome)";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.textBoxWithPlaceholder1);
+            this.groupBox2.Location = new System.Drawing.Point(376, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(268, 81);
+            this.groupBox2.TabIndex = 16;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "有占位文本的文本框 TextBoxWithPlaceholder";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.labelCN1);
+            this.groupBox3.Controls.Add(this.roundButton1);
+            this.groupBox3.Controls.Add(this.roundButton4);
+            this.groupBox3.Controls.Add(this.roundButton2);
+            this.groupBox3.Controls.Add(this.roundButtonToast消息提示框);
+            this.groupBox3.Controls.Add(this.roundButton3);
+            this.groupBox3.Location = new System.Drawing.Point(589, 115);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(299, 488);
+            this.groupBox3.TabIndex = 17;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "圆形按钮 RoundButton";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label2);
+            this.groupBox4.Controls.Add(this.dataGridView1);
+            this.groupBox4.Controls.Add(this.label1);
+            this.groupBox4.Controls.Add(this.dataGridViewHiDpi1);
+            this.groupBox4.Location = new System.Drawing.Point(12, 115);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(571, 488);
+            this.groupBox4.TabIndex = 18;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "支持HiDpi的DGV DataGridViewHiDpi";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.inputNumber1);
+            this.groupBox5.Location = new System.Drawing.Point(661, 16);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(227, 77);
+            this.groupBox5.TabIndex = 18;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "数字输入框 InputNumber";
+            // 
+            // inputNumber1
+            // 
+            this.inputNumber1.Location = new System.Drawing.Point(30, 22);
+            this.inputNumber1.Margin = new System.Windows.Forms.Padding(1);
+            this.inputNumber1.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.inputNumber1.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.inputNumber1.Name = "inputNumber1";
+            this.inputNumber1.Size = new System.Drawing.Size(110, 39);
+            this.inputNumber1.Step = 1;
+            this.inputNumber1.TabIndex = 0;
             // 
             // dataGridViewHiDpi1
             // 
@@ -310,13 +373,28 @@
             this.Column4.HeaderText = "Column4";
             this.Column4.Name = "Column4";
             // 
-            // inputNumber1
+            // labelCN1
             // 
-            this.inputNumber1.Location = new System.Drawing.Point(30, 22);
-            this.inputNumber1.Margin = new System.Windows.Forms.Padding(1);
-            this.inputNumber1.Name = "inputNumber1";
-            this.inputNumber1.Size = new System.Drawing.Size(110, 39);
-            this.inputNumber1.TabIndex = 0;
+            this.labelCN1.Location = new System.Drawing.Point(18, 394);
+            this.labelCN1.Name = "labelCN1";
+            this.labelCN1.Size = new System.Drawing.Size(256, 21);
+            this.labelCN1.TabIndex = 13;
+            this.labelCN1.Text = "labelCN";
+            this.labelCN1.前景色 = System.Drawing.Color.DarkCyan;
+            this.labelCN1.字体 = new System.Drawing.Font("幼圆", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelCN1.文本 = "labelCN";
+            // 
+            // roundButton1
+            // 
+            this.roundButton1.DistanceToBorder = 4;
+            this.roundButton1.Font = new System.Drawing.Font("Arial", 16F);
+            this.roundButton1.IconColor2 = System.Drawing.Color.Red;
+            this.roundButton1.Location = new System.Drawing.Point(33, 32);
+            this.roundButton1.Name = "roundButton1";
+            this.roundButton1.Size = new System.Drawing.Size(102, 105);
+            this.roundButton1.TabIndex = 1;
+            this.roundButton1.Text = "roundButton1";
+            this.roundButton1.UseVisualStyleBackColor = true;
             // 
             // roundButton4
             // 
@@ -334,19 +412,6 @@
             this.roundButton4.UseVisualStyleBackColor = true;
             this.roundButton4.Click += new System.EventHandler(this.roundButton4_Click);
             // 
-            // roundButtonToast消息提示框
-            // 
-            this.roundButtonToast消息提示框.DistanceToBorder = 4;
-            this.roundButtonToast消息提示框.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.roundButtonToast消息提示框.IconColor2 = System.Drawing.Color.Red;
-            this.roundButtonToast消息提示框.IsShowIcon = false;
-            this.roundButtonToast消息提示框.Location = new System.Drawing.Point(61, 261);
-            this.roundButtonToast消息提示框.Name = "roundButtonToast消息提示框";
-            this.roundButtonToast消息提示框.Size = new System.Drawing.Size(186, 98);
-            this.roundButtonToast消息提示框.TabIndex = 2;
-            this.roundButtonToast消息提示框.Text = "Toast消息提示框";
-            this.roundButtonToast消息提示框.UseVisualStyleBackColor = true;
-            // 
             // roundButton2
             // 
             this.roundButton2.DistanceToBorder = 4;
@@ -361,84 +426,43 @@
             this.roundButton2.UseVisualStyleBackColor = true;
             this.roundButton2.Click += new System.EventHandler(this.roundButton2_Click);
             // 
-            // roundButton1
+            // roundButtonToast消息提示框
             // 
-            this.roundButton1.DistanceToBorder = 4;
-            this.roundButton1.Font = new System.Drawing.Font("Arial", 16F);
-            this.roundButton1.IconColor2 = System.Drawing.Color.Red;
-            this.roundButton1.Location = new System.Drawing.Point(33, 32);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(102, 105);
-            this.roundButton1.TabIndex = 1;
-            this.roundButton1.Text = "roundButton1";
-            this.roundButton1.UseVisualStyleBackColor = true;
+            this.roundButtonToast消息提示框.DistanceToBorder = 4;
+            this.roundButtonToast消息提示框.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.roundButtonToast消息提示框.IconColor2 = System.Drawing.Color.Red;
+            this.roundButtonToast消息提示框.IsShowIcon = false;
+            this.roundButtonToast消息提示框.Location = new System.Drawing.Point(61, 261);
+            this.roundButtonToast消息提示框.Name = "roundButtonToast消息提示框";
+            this.roundButtonToast消息提示框.Size = new System.Drawing.Size(186, 98);
+            this.roundButtonToast消息提示框.TabIndex = 2;
+            this.roundButtonToast消息提示框.Text = "Toast消息提示框";
+            this.roundButtonToast消息提示框.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // roundButton3
             // 
-            this.groupBox1.Controls.Add(this.iconButton4);
-            this.groupBox1.Controls.Add(this.iconButton1);
-            this.groupBox1.Controls.Add(this.iconButton2);
-            this.groupBox1.Controls.Add(this.iconButton3);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(349, 81);
-            this.groupBox1.TabIndex = 15;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "iconButton(FontAwesome)";
+            this.roundButton3.BorderWidth = 2;
+            this.roundButton3.ButtonCenterColorEnd = System.Drawing.Color.Orange;
+            this.roundButton3.ButtonCenterColorStart = System.Drawing.Color.Gold;
+            this.roundButton3.DistanceToBorder = 4;
+            this.roundButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.roundButton3.IconColor2 = System.Drawing.Color.Red;
+            this.roundButton3.IsRectangle = true;
+            this.roundButton3.IsShowIcon = false;
+            this.roundButton3.Location = new System.Drawing.Point(184, 160);
+            this.roundButton3.Name = "roundButton3";
+            this.roundButton3.Size = new System.Drawing.Size(79, 54);
+            this.roundButton3.TabIndex = 12;
+            this.roundButton3.Text = "查询";
+            this.roundButton3.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
+            // textBoxWithPlaceholder1
             // 
-            this.groupBox2.Controls.Add(this.textBoxWithPlaceholder1);
-            this.groupBox2.Location = new System.Drawing.Point(376, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(268, 81);
-            this.groupBox2.TabIndex = 16;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "有占位文本的文本框 TextBoxWithPlaceholder";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.roundButton1);
-            this.groupBox3.Controls.Add(this.roundButton4);
-            this.groupBox3.Controls.Add(this.roundButton2);
-            this.groupBox3.Controls.Add(this.roundButtonToast消息提示框);
-            this.groupBox3.Controls.Add(this.roundButton3);
-            this.groupBox3.Location = new System.Drawing.Point(589, 115);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(299, 488);
-            this.groupBox3.TabIndex = 17;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "圆形按钮 RoundButton";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Controls.Add(this.dataGridView1);
-            this.groupBox4.Controls.Add(this.label1);
-            this.groupBox4.Controls.Add(this.dataGridViewHiDpi1);
-            this.groupBox4.Location = new System.Drawing.Point(12, 115);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(571, 488);
-            this.groupBox4.TabIndex = 18;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "支持HiDpi的DGV DataGridViewHiDpi";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.inputNumber1);
-            this.groupBox5.Location = new System.Drawing.Point(661, 16);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(227, 77);
-            this.groupBox5.TabIndex = 18;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "数字输入框 InputNumber";
-            // 
-            // 启动ToolStripMenuItem1
-            // 
-            this.启动ToolStripMenuItem1.Name = "启动ToolStripMenuItem1";
-            this.启动ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.启动ToolStripMenuItem1.Text = "启动";
-            this.启动ToolStripMenuItem1.Click += new System.EventHandler(this.启动ToolStripMenuItem1_Click);
+            this.textBoxWithPlaceholder1.Location = new System.Drawing.Point(30, 28);
+            this.textBoxWithPlaceholder1.Name = "textBoxWithPlaceholder1";
+            this.textBoxWithPlaceholder1.Placeholder = "输入用户名";
+            this.textBoxWithPlaceholder1.Size = new System.Drawing.Size(148, 21);
+            this.textBoxWithPlaceholder1.TabIndex = 14;
             // 
             // Form1
             // 
@@ -459,7 +483,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -467,6 +490,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -508,6 +532,7 @@
         private System.Windows.Forms.ToolStripMenuItem 启动ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 暂停ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 启动ToolStripMenuItem1;
+        private Rookie.Component.LabelCN labelCN1;
     }
 }
 

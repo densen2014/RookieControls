@@ -81,6 +81,9 @@
     <Compile Include="Component\RoundButton.Designer.cs">
       <DependentUpon>RoundButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="Component\LabelCN.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Component\TextBoxWithPlaceholder.cs">
       <SubType>Component</SubType>
     </Compile>
