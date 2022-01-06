@@ -75,6 +75,9 @@
       <DependentUpon>InputNumber.cs</DependentUpon>
     </Compile>
     <Compile Include="Component\Monitor.cs" />
+    <Compile Include="Component\PictureBoxZoomMouseWheel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Component\RoundButton.cs">
       <SubType>Component</SubType>
     </Compile>

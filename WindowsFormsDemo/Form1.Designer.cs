@@ -49,30 +49,33 @@
             this.启动ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBoxWithPlaceholder1 = new TextBoxWithPlaceholder();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.inputNumber1 = new Rookie.Component.InputNumber();
-            this.dataGridViewHiDpi1 = new Rookie.Component.DataGridViewHiDpi();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelCN1 = new Rookie.Component.LabelCN();
             this.roundButton1 = new Rookie.Component.RoundButton();
             this.roundButton4 = new Rookie.Component.RoundButton();
             this.roundButton2 = new Rookie.Component.RoundButton();
             this.roundButtonToast消息提示框 = new Rookie.Component.RoundButton();
             this.roundButton3 = new Rookie.Component.RoundButton();
-            this.textBoxWithPlaceholder1 = new TextBoxWithPlaceholder();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.dataGridViewHiDpi1 = new Rookie.Component.DataGridViewHiDpi();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.inputNumber1 = new Rookie.Component.InputNumber();
+            this.pictureBoxZoomMouseWheel1 = new Rookie.Component.PictureBoxZoomMouseWheel();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -86,7 +89,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(16, 276);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(542, 197);
+            this.dataGridView1.Size = new System.Drawing.Size(428, 197);
             this.dataGridView1.TabIndex = 6;
             // 
             // Column5
@@ -203,7 +206,7 @@
             this.Button切换});
             this.statusStrip1.Location = new System.Drawing.Point(0, 616);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(900, 23);
+            this.statusStrip1.Size = new System.Drawing.Size(1238, 23);
             this.statusStrip1.TabIndex = 13;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -281,6 +284,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "有占位文本的文本框 TextBoxWithPlaceholder";
             // 
+            // textBoxWithPlaceholder1
+            // 
+            this.textBoxWithPlaceholder1.Location = new System.Drawing.Point(30, 28);
+            this.textBoxWithPlaceholder1.Name = "textBoxWithPlaceholder1";
+            this.textBoxWithPlaceholder1.Placeholder = "输入用户名";
+            this.textBoxWithPlaceholder1.Size = new System.Drawing.Size(148, 21);
+            this.textBoxWithPlaceholder1.TabIndex = 14;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.labelCN1);
@@ -289,89 +300,12 @@
             this.groupBox3.Controls.Add(this.roundButton2);
             this.groupBox3.Controls.Add(this.roundButtonToast消息提示框);
             this.groupBox3.Controls.Add(this.roundButton3);
-            this.groupBox3.Location = new System.Drawing.Point(589, 115);
+            this.groupBox3.Location = new System.Drawing.Point(489, 115);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(299, 488);
             this.groupBox3.TabIndex = 17;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "圆形按钮 RoundButton";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Controls.Add(this.dataGridView1);
-            this.groupBox4.Controls.Add(this.label1);
-            this.groupBox4.Controls.Add(this.dataGridViewHiDpi1);
-            this.groupBox4.Location = new System.Drawing.Point(12, 115);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(571, 488);
-            this.groupBox4.TabIndex = 18;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "支持HiDpi的DGV DataGridViewHiDpi";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.inputNumber1);
-            this.groupBox5.Location = new System.Drawing.Point(661, 16);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(227, 77);
-            this.groupBox5.TabIndex = 18;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "数字输入框 InputNumber";
-            // 
-            // inputNumber1
-            // 
-            this.inputNumber1.Location = new System.Drawing.Point(30, 22);
-            this.inputNumber1.Margin = new System.Windows.Forms.Padding(1);
-            this.inputNumber1.Maximum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.inputNumber1.Minimum = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.inputNumber1.Name = "inputNumber1";
-            this.inputNumber1.Size = new System.Drawing.Size(110, 39);
-            this.inputNumber1.Step = 1;
-            this.inputNumber1.TabIndex = 0;
-            // 
-            // dataGridViewHiDpi1
-            // 
-            this.dataGridViewHiDpi1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewHiDpi1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
-            this.dataGridViewHiDpi1.DpiRate = 0D;
-            this.dataGridViewHiDpi1.Location = new System.Drawing.Point(16, 47);
-            this.dataGridViewHiDpi1.Name = "dataGridViewHiDpi1";
-            this.dataGridViewHiDpi1.RowTemplate.Height = 23;
-            this.dataGridViewHiDpi1.Size = new System.Drawing.Size(542, 209);
-            this.dataGridViewHiDpi1.TabIndex = 5;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Column4";
-            this.Column4.Name = "Column4";
             // 
             // labelCN1
             // 
@@ -456,20 +390,110 @@
             this.roundButton3.Text = "查询";
             this.roundButton3.UseVisualStyleBackColor = true;
             // 
-            // textBoxWithPlaceholder1
+            // groupBox4
             // 
-            this.textBoxWithPlaceholder1.Location = new System.Drawing.Point(30, 28);
-            this.textBoxWithPlaceholder1.Name = "textBoxWithPlaceholder1";
-            this.textBoxWithPlaceholder1.Placeholder = "输入用户名";
-            this.textBoxWithPlaceholder1.Size = new System.Drawing.Size(148, 21);
-            this.textBoxWithPlaceholder1.TabIndex = 14;
+            this.groupBox4.Controls.Add(this.label2);
+            this.groupBox4.Controls.Add(this.dataGridView1);
+            this.groupBox4.Controls.Add(this.label1);
+            this.groupBox4.Controls.Add(this.dataGridViewHiDpi1);
+            this.groupBox4.Location = new System.Drawing.Point(12, 115);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(465, 488);
+            this.groupBox4.TabIndex = 18;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "支持HiDpi的DGV DataGridViewHiDpi";
+            // 
+            // dataGridViewHiDpi1
+            // 
+            this.dataGridViewHiDpi1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewHiDpi1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            this.dataGridViewHiDpi1.DpiRate = 0D;
+            this.dataGridViewHiDpi1.Location = new System.Drawing.Point(16, 47);
+            this.dataGridViewHiDpi1.Name = "dataGridViewHiDpi1";
+            this.dataGridViewHiDpi1.RowTemplate.Height = 23;
+            this.dataGridViewHiDpi1.Size = new System.Drawing.Size(428, 209);
+            this.dataGridViewHiDpi1.TabIndex = 5;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Column2";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Column3";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Column4";
+            this.Column4.Name = "Column4";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.inputNumber1);
+            this.groupBox5.Location = new System.Drawing.Point(661, 16);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(227, 77);
+            this.groupBox5.TabIndex = 18;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "数字输入框 InputNumber";
+            // 
+            // inputNumber1
+            // 
+            this.inputNumber1.Location = new System.Drawing.Point(30, 22);
+            this.inputNumber1.Margin = new System.Windows.Forms.Padding(1);
+            this.inputNumber1.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.inputNumber1.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.inputNumber1.Name = "inputNumber1";
+            this.inputNumber1.Size = new System.Drawing.Size(110, 39);
+            this.inputNumber1.Step = 1;
+            this.inputNumber1.TabIndex = 0;
+            // 
+            // pictureBoxZoomMouseWheel1
+            // 
+            this.pictureBoxZoomMouseWheel1.Border = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxZoomMouseWheel1.Location = new System.Drawing.Point(10, 32);
+            this.pictureBoxZoomMouseWheel1.Name = "pictureBoxZoomMouseWheel1";
+            this.pictureBoxZoomMouseWheel1.Picture = null;
+            this.pictureBoxZoomMouseWheel1.PictureFilePath = "C:\\Users\\Alex\\Pictures\\20190815113423759.jpg";
+            this.pictureBoxZoomMouseWheel1.Size = new System.Drawing.Size(402, 441);
+            this.pictureBoxZoomMouseWheel1.TabIndex = 19;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.pictureBoxZoomMouseWheel1);
+            this.groupBox6.Location = new System.Drawing.Point(798, 115);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(428, 488);
+            this.groupBox6.TabIndex = 20;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "图片框带滚轮放大 PictureBoxZoomMouseWheel";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(900, 639);
+            this.ClientSize = new System.Drawing.Size(1238, 639);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -489,8 +513,9 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHiDpi1)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -533,6 +558,8 @@
         private System.Windows.Forms.ToolStripMenuItem 暂停ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 启动ToolStripMenuItem1;
         private Rookie.Component.LabelCN labelCN1;
+        private Rookie.Component.PictureBoxZoomMouseWheel pictureBoxZoomMouseWheel1;
+        private System.Windows.Forms.GroupBox groupBox6;
     }
 }
 

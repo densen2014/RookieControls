@@ -45,6 +45,10 @@ namespace WindowsFormsApp2
             this.roundButtonToast消息提示框.Click += new System.EventHandler(this.roundButtonToast消息提示框_Click);
 
             OnStartMonitorNetwork();
+
+            //路径或指定资源
+            //pictureBoxZoomMouseWheel1.PictureFilePath = "pic.jpg";
+            //pictureBoxZoomMouseWheel1.Picture = Image.FromFile("pic.jpg");
         }
 
         #region 网速
