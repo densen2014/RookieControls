@@ -1,0 +1,414 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RookieControls</name>
+    </assembly>
+    <members>
+        <member name="P:Rookie.Component.DataGridViewHiDpi.DpiRate">
+            <summary>
+            获取或设置按钮主体颜色渐变方向
+            </summary>
+        </member>
+        <member name="M:Rookie.Component.DataGridViewHiDpi.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.InputNumber.Value">
+            <summary>
+            设置初始数值, 默认 0
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.InputNumber.Step">
+            <summary>
+            设置步进数值, 默认 1
+            <para>获取或设置单击向上或向下按钮时，数字显示框（也称作 up-down 控件）递增或递减的值。</para>
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.InputNumber.Maximum">
+            <summary>
+            设置最大值, 默认 100
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.InputNumber.Minimum">
+            <summary>
+            设置最小值, 默认 0
+            </summary>
+        </member>
+        <member name="E:Rookie.Component.InputNumber.ValueChanged">
+            <summary>
+            在以某种方式更改 Value 属性后发生。
+            </summary>
+        </member>
+        <member name="E:Rookie.Component.InputNumber.ValueDown">
+            <summary>
+            在 Down 后发生。
+            </summary>
+        </member>
+        <member name="E:Rookie.Component.InputNumber.ValueUp">
+            <summary>
+            在 Up 后发生。
+            </summary>
+        </member>
+        <member name="F:Rookie.Component.InputNumber.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Rookie.Component.InputNumber.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Rookie.Component.InputNumber.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要修改
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.PictureBoxZoomMouseWheel.Picture">
+            <summary>
+            图片
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.PictureBoxZoomMouseWheel.PictureFilePath">
+            <summary>
+            图片路径优先 Property to select the picture which is displayed in the picturebox. If the 
+            file doesn´t exist or we receive an exception, the picturebox displays 
+            a red cross.
+            </summary>
+            <value>Complete filename of the picture, including path information</value>
+            <remarks>Supported fileformat: *.gif, *.tif, *.jpg, *.bmp</remarks>
+            
+        </member>
+        <member name="P:Rookie.Component.PictureBoxZoomMouseWheel.Border">
+            <summary>
+            Set the frametype of the picturbox
+            </summary>
+        </member>
+        <member name="M:Rookie.Component.PictureBoxZoomMouseWheel.InitCtrl">
+            <summary>
+            Special settings for the picturebox ctrl
+            </summary>
+        </member>
+        <member name="M:Rookie.Component.PictureBoxZoomMouseWheel.RedCross">
+            <summary>
+            Create a simple red cross as a bitmap and display it in the picturebox
+            </summary>
+        </member>
+        <member name="M:Rookie.Component.PictureBoxZoomMouseWheel.ZoomIn">
+            <summary>
+            Make the PictureBox dimensions larger to effect the Zoom.
+            </summary>
+            <remarks>Maximum 5 times bigger</remarks>
+        </member>
+        <member name="M:Rookie.Component.PictureBoxZoomMouseWheel.ZoomOut">
+            <summary>
+            Make the PictureBox dimensions smaller to effect the Zoom.
+            </summary>
+            <remarks>Minimum 5 times smaller</remarks>
+        </member>
+        <member name="M:Rookie.Component.PictureBoxZoomMouseWheel.PicBox_MouseWheel(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            We use the mousewheel to zoom the picture in or out
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rookie.Component.PictureBoxZoomMouseWheel.PicBox_MouseEnter(System.Object,System.EventArgs)">
+            <summary>
+            Make sure that the PicBox have the focus, otherwise it doesn´t receive 
+            mousewheel events !.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rookie.Component.PictureBoxZoomMouseWheel.Dispose(System.Boolean)">
+            <summary>
+            Die verwendeten Ressourcen bereinigen.
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.RoundButton.DistanceToBorder">
+            <summary>
+            设置或获取圆形按钮的圆的边距离方框边的距离
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.RoundButton.IsRectangle">
+            <summary>
+            是否方形
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.RoundButton.ButtonCenterColorEnd">
+            <summary>
+            获取或设置按钮主体颜色
+            </summary>
+            <value>按钮主体渐变起始颜色.</value>
+        </member>
+        <member name="P:Rookie.Component.RoundButton.ButtonCenterColorStart">
+            <summary>
+            获取或设置按钮主体颜色
+            </summary>
+            <value>按钮主体渐变终点颜色.</value>
+        </member>
+        <member name="P:Rookie.Component.RoundButton.GradientAngle">
+            <summary>
+            获取或设置按钮主体颜色渐变方向
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.RoundButton.IsShowIcon">
+            <summary>
+            是否显示中间标志
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.RoundButton.IconColor">
+            <summary>
+            按钮中间标志填充色
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.RoundButton.IconColor2">
+            <summary>
+            按钮中间标志填充色
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.RoundButton.Text">
+            <summary>
+            按下状态中间文本
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.RoundButton.Font">
+            <summary>
+            显示控件中文本的字体
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.RoundButton.ForeColor">
+            <summary>
+            显示控件中文本的颜色
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.RoundButton.BorderWidth">
+            <summary>
+            获取或设置边框大小
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.RoundButton.BorderColor">
+            <summary>
+            获取或设置按钮边框颜色
+            </summary>
+            <value>The color of the focus.</value>
+        </member>
+        <member name="P:Rookie.Component.RoundButton.BorderTransparent">
+            <summary>
+            获取或设置边框透明度
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.RoundButton.FocusBorderColor">
+            <summary>
+            获取或设置按钮获取焦点后边框颜色
+            </summary>
+            <value>The color of the focus.</value>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            控件绘制
+            </summary>
+            <param name="pevent"></param>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.OnMouseClick(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标点击事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.MouseUp"/> event.
+            </summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.MouseDown"/> event.
+            </summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.OnMouseEnter(System.EventArgs)">
+            <summary>
+            鼠标进入按钮
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.OnMouseLeave(System.EventArgs)">
+            <summary>
+            鼠标离开控件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.DrawStateIcon(System.Drawing.Graphics)">
+            <summary>
+            绘制中心区域标志
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.myResize">
+            <summary>
+            重新确定控件大小
+            </summary>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.DrawHighLight(System.Drawing.Graphics)">
+            <summary>
+            绘制高亮效果
+            </summary>
+            <param name="g">Graphic对象</param>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.DrawBorder(System.Drawing.Graphics)">
+            <summary>
+            绘制边框
+            </summary>
+            <param name="g">Graphics对象</param>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.DrawPressState(System.Drawing.Graphics)">
+             <summary>
+            
+             </summary>
+             <param name="g">Graphic对象</param>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.PaintShape(System.Drawing.Graphics,System.Drawing.Pen,System.Drawing.Rectangle)">
+            <summary>
+            绘制矩形
+            </summary>
+            <param name="g">Graphics对象</param>
+            <param name="pen">Pen对象</param>
+            <param name="rect">RectangleF对象</param>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.PaintShape(System.Drawing.Graphics,System.Drawing.Brush,System.Drawing.Rectangle)">
+            <summary>
+            绘制矩形
+            </summary>
+            <param name="g">Graphics对象</param>
+            <param name="brush">Brush对象</param>
+            <param name="rect">Rectangle对象</param>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.PaintShape(System.Drawing.Graphics,System.Drawing.Pen,System.Drawing.RectangleF)">
+            <summary>
+            绘制图形
+            </summary>
+            <param name="g">Graphics对象</param>
+            <param name="pen">Pen对象</param>
+            <param name="rect">RectangleF对象</param>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.PaintShape(System.Drawing.Graphics,System.Drawing.Brush,System.Drawing.RectangleF)">
+            <summary>
+            绘制图形
+            </summary>
+            <param name="g">Graphics对象</param>
+            <param name="brush">Brush对象</param>
+            <param name="rect">Rectangle对象</param>
+        </member>
+        <member name="F:Rookie.Component.RoundButton.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Rookie.Component.RoundButton.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.LabelCN.前景色">
+            <summary>
+            获取或设置控件的前景色.
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.LabelCN.字体">
+            <summary>
+            设置或获取字体.
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.LabelCN.文本">
+            <summary>
+            设置或获取文本.
+            </summary>
+        </member>
+        <member name="M:Rookie.Component.LabelCN.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Rookie.Component.LabelCN.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            控件绘制
+            </summary>
+            <param name="pevent"></param>
+        </member>
+        <member name="M:Rookie.Component.LabelCN.OnMouseClick(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标点击事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="F:Rookie.Component.Toast.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Rookie.Component.Toast.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Rookie.Component.Toast.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Monitor.MonitorNetwork">
+            <summary>
+            监测IPv4v6网速及流量的实例代码
+            </summary>
+        </member>
+        <member name="M:Monitor.MonitorNetwork.NicList">
+            <summary>
+            网卡列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Monitor.MonitorNetwork.Start">
+            <summary>
+            启动
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Monitor.MonitorNetwork.Timer_Elapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            计算速度
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:TextBoxWithPlaceholder">
+            <summary>
+            有占位文本的文本框
+            </summary>
+        </member>
+        <member name="P:TextBoxWithPlaceholder.Placeholder">
+            <summary>
+            占位文本
+            </summary>
+        </member>
+    </members>
+</doc>
