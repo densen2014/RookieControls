@@ -65,7 +65,7 @@ namespace Rookie.Component
                     }
                     break;
                 case AlertFormAction.Wait:
-                    timer1.Interval = duration == AlertDuration.Short ? 3000 : (duration == AlertDuration.Long ? 1000 * 10 : 9999999);//警告框停留时间
+                    timer1.Interval = duration == AlertDuration.Short ? 5000 : (duration == AlertDuration.Long ? 1000 * 20 : 9999999);//警告框停留时间
                     action = AlertFormAction.Close;
                     break;
                 case AlertFormAction.Close:
