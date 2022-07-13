@@ -41,7 +41,7 @@
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClose.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.buttonClose.ForeColor = System.Drawing.Color.White;
-            this.buttonClose.Location = new System.Drawing.Point(274, 8);
+            this.buttonClose.Location = new System.Drawing.Point(318, 4);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(29, 29);
             this.buttonClose.TabIndex = 0;
@@ -56,7 +56,7 @@
             this.labelContent.ForeColor = System.Drawing.Color.White;
             this.labelContent.Location = new System.Drawing.Point(59, 8);
             this.labelContent.Name = "labelContent";
-            this.labelContent.Size = new System.Drawing.Size(242, 60);
+            this.labelContent.Size = new System.Drawing.Size(280, 88);
             this.labelContent.TabIndex = 1;
             this.labelContent.Text = "提示消息";
             this.labelContent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -79,7 +79,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(313, 77);
+            this.ClientSize = new System.Drawing.Size(351, 105);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.labelContent);
