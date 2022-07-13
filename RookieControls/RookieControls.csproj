@@ -113,7 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FontAwesome.Sharp">
-      <Version>5.15.4</Version>
+      <Version>6.1.1</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
