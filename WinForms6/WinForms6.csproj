@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFrameworks>net6.0-windows;net461;</TargetFrameworks>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<!--<ImplicitUsings>enable</ImplicitUsings>-->
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+
+		<ApplicationVisualStyles>true</ApplicationVisualStyles>
+		<ApplicationUseCompatibleTextRendering>false</ApplicationUseCompatibleTextRendering>
+		<ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\RookieControls\RookieControls.csproj" />
+	</ItemGroup>
+
+</Project>
