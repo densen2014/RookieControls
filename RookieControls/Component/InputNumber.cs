@@ -46,11 +46,12 @@ namespace Rookie.Component
             // numericUpDown1
             // 
             this.numericUpDown1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.numericUpDown1.Location = new System.Drawing.Point(27, 7);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown1.Location = new System.Drawing.Point(50, 12);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(65, 23);
+            this.numericUpDown1.Size = new System.Drawing.Size(119, 35);
             this.numericUpDown1.TabIndex = 0;
+            this.numericUpDown1.Tag = "Size(119, 35)";
             this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
@@ -58,15 +59,16 @@ namespace Rookie.Component
             // 
             this.UpButton.BorderWidth = 2;
             this.UpButton.DistanceToBorder = 4;
-            this.UpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.UpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.UpButton.IconColor2 = System.Drawing.Color.Red;
             this.UpButton.IsShowIcon = false;
-            this.UpButton.Location = new System.Drawing.Point(75, 2);
-            this.UpButton.Margin = new System.Windows.Forms.Padding(2);
+            this.UpButton.Location = new System.Drawing.Point(138, 4);
+            this.UpButton.Margin = new System.Windows.Forms.Padding(4);
             this.UpButton.Name = "UpButton";
-            this.UpButton.Size = new System.Drawing.Size(28, 30);
+            this.UpButton.Size = new System.Drawing.Size(55, 55);
             this.UpButton.TabIndex = 2;
-            this.UpButton.Text = "+";
+            this.UpButton.Tag = "Size(55, 55)";
+            this.UpButton.Text = "➕";
             this.UpButton.UseVisualStyleBackColor = true;
             this.UpButton.Click += new System.EventHandler(this.UpButton_Click);
             // 
@@ -74,34 +76,40 @@ namespace Rookie.Component
             // 
             this.DownButton.BorderWidth = 2;
             this.DownButton.DistanceToBorder = 4;
-            this.DownButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DownButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DownButton.IconColor2 = System.Drawing.Color.Red;
             this.DownButton.IsShowIcon = false;
-            this.DownButton.Location = new System.Drawing.Point(2, 2);
-            this.DownButton.Margin = new System.Windows.Forms.Padding(2);
+            this.DownButton.Location = new System.Drawing.Point(4, 4);
+            this.DownButton.Margin = new System.Windows.Forms.Padding(4);
             this.DownButton.Name = "DownButton";
-            this.DownButton.Size = new System.Drawing.Size(28, 30);
+            this.DownButton.Size = new System.Drawing.Size(55, 55);
             this.DownButton.TabIndex = 3;
-            this.DownButton.Text = "-";
+            this.DownButton.Tag = "Size(55, 55)";
+            this.DownButton.Text = "➖";
             this.DownButton.UseVisualStyleBackColor = true;
             this.DownButton.Click += new System.EventHandler(this.DownButton_Click);
             // 
             // InputNumber
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.DownButton);
             this.Controls.Add(this.UpButton);
             this.Controls.Add(this.numericUpDown1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "InputNumber";
-            this.Size = new System.Drawing.Size(107, 34);
+            this.Size = new System.Drawing.Size(196, 60);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        public InputNumber()
+        {
+            InitializeComponent();
+        }
 
         /// <summary>
         /// 设置初始数值, 默认 0
@@ -181,11 +189,6 @@ namespace Rookie.Component
         public event ValueUpHandler ValueUp;
         public delegate void ValueUpHandler(int value);
         protected void OnValueUpEvent(int value) => ValueUp?.Invoke(value);
-
-        public InputNumber()
-        {
-            InitializeComponent();
-        }
 
         private void DownButton_Click(object sender, EventArgs e)
         {
