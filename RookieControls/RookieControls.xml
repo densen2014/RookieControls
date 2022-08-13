@@ -67,6 +67,38 @@
             使用代码编辑器修改此方法的内容。
             </summary>
         </member>
+        <member name="P:Rookie.Component.LabelCN.前景色">
+            <summary>
+            获取或设置控件的前景色.
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.LabelCN.字体">
+            <summary>
+            设置或获取字体.
+            </summary>
+        </member>
+        <member name="P:Rookie.Component.LabelCN.文本">
+            <summary>
+            设置或获取文本.
+            </summary>
+        </member>
+        <member name="M:Rookie.Component.LabelCN.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Rookie.Component.LabelCN.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            控件绘制
+            </summary>
+            <param name="pevent"></param>
+        </member>
+        <member name="M:Rookie.Component.LabelCN.OnMouseClick(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            鼠标点击事件
+            </summary>
+            <param name="e"></param>
+        </member>
         <member name="P:Rookie.Component.PictureBoxZoomMouseWheel.Picture">
             <summary>
             图片
@@ -326,38 +358,6 @@
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
-        </member>
-        <member name="P:Rookie.Component.LabelCN.前景色">
-            <summary>
-            获取或设置控件的前景色.
-            </summary>
-        </member>
-        <member name="P:Rookie.Component.LabelCN.字体">
-            <summary>
-            设置或获取字体.
-            </summary>
-        </member>
-        <member name="P:Rookie.Component.LabelCN.文本">
-            <summary>
-            设置或获取文本.
-            </summary>
-        </member>
-        <member name="M:Rookie.Component.LabelCN.#ctor">
-            <summary>
-            构造函数
-            </summary>
-        </member>
-        <member name="M:Rookie.Component.LabelCN.OnPaint(System.Windows.Forms.PaintEventArgs)">
-            <summary>
-            控件绘制
-            </summary>
-            <param name="pevent"></param>
-        </member>
-        <member name="M:Rookie.Component.LabelCN.OnMouseClick(System.Windows.Forms.MouseEventArgs)">
-            <summary>
-            鼠标点击事件
-            </summary>
-            <param name="e"></param>
         </member>
         <member name="F:Rookie.Component.Toast.components">
             <summary>
