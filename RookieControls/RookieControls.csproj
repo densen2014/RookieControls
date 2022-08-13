@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFramework>net461</TargetFramework>
+		<!--<TargetFrameworks>net6.0-windows;net461;</TargetFrameworks>-->
 		<UseWindowsForms>true</UseWindowsForms>
 		<IsPackable>true</IsPackable>
 		<PackageIcon>logo.png</PackageIcon>
@@ -43,5 +44,5 @@
 
 	<ItemGroup>
 		<PackageReference Include="FontAwesome.Sharp" Version="6.1.1" />
-	</ItemGroup> 
+	</ItemGroup>
 </Project>
