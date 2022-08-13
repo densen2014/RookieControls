@@ -39,11 +39,12 @@
             // buttonClose
             // 
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClose.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonClose.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonClose.ForeColor = System.Drawing.Color.White;
-            this.buttonClose.Location = new System.Drawing.Point(318, 4);
+            this.buttonClose.Location = new System.Drawing.Point(371, 6);
+            this.buttonClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(29, 29);
+            this.buttonClose.Size = new System.Drawing.Size(35, 35);
             this.buttonClose.TabIndex = 0;
             this.buttonClose.Text = "×";
             this.buttonClose.UseVisualStyleBackColor = true;
@@ -52,20 +53,22 @@
             // labelContent
             // 
             this.labelContent.AutoEllipsis = true;
-            this.labelContent.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelContent.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelContent.ForeColor = System.Drawing.Color.White;
-            this.labelContent.Location = new System.Drawing.Point(59, 8);
+            this.labelContent.Location = new System.Drawing.Point(69, 11);
+            this.labelContent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelContent.Name = "labelContent";
-            this.labelContent.Size = new System.Drawing.Size(280, 88);
+            this.labelContent.Size = new System.Drawing.Size(327, 125);
             this.labelContent.TabIndex = 1;
             this.labelContent.Text = "提示消息";
             this.labelContent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(11, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(13, 30);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 38);
+            this.pictureBox1.Size = new System.Drawing.Size(45, 45);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -76,14 +79,15 @@
             // 
             // Toast
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(351, 105);
+            this.ClientSize = new System.Drawing.Size(410, 149);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.labelContent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Toast";
             this.ShowInTaskbar = false;
             this.Text = "AlertMessageForm";

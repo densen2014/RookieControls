@@ -40,10 +40,21 @@
             // 
             // inputNumber1
             // 
-            this.inputNumber1.Location = new System.Drawing.Point(494, 41);
-            this.inputNumber1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.inputNumber1.Location = new System.Drawing.Point(576, 58);
+            this.inputNumber1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.inputNumber1.Maximum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.inputNumber1.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.inputNumber1.Name = "inputNumber1";
-            this.inputNumber1.Size = new System.Drawing.Size(107, 34);
+            this.inputNumber1.Size = new System.Drawing.Size(125, 49);
+            this.inputNumber1.Step = 1;
             this.inputNumber1.TabIndex = 0;
             // 
             // dataGridViewHiDpi1
@@ -55,10 +66,11 @@
             this.Column3,
             this.Column4});
             this.dataGridViewHiDpi1.DpiRate = 0D;
-            this.dataGridViewHiDpi1.Location = new System.Drawing.Point(121, 116);
+            this.dataGridViewHiDpi1.Location = new System.Drawing.Point(141, 164);
+            this.dataGridViewHiDpi1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewHiDpi1.Name = "dataGridViewHiDpi1";
             this.dataGridViewHiDpi1.RowTemplate.Height = 23;
-            this.dataGridViewHiDpi1.Size = new System.Drawing.Size(549, 247);
+            this.dataGridViewHiDpi1.Size = new System.Drawing.Size(640, 350);
             this.dataGridViewHiDpi1.TabIndex = 1;
             // 
             // Column1
@@ -84,23 +96,25 @@
             // roundButton1
             // 
             this.roundButton1.DistanceToBorder = 4;
-            this.roundButton1.Font = new System.Drawing.Font("幼圆", 13F);
+            this.roundButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.roundButton1.IconColor2 = System.Drawing.Color.Red;
-            this.roundButton1.Location = new System.Drawing.Point(652, 30);
+            this.roundButton1.Location = new System.Drawing.Point(761, 42);
+            this.roundButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(80, 80);
+            this.roundButton1.Size = new System.Drawing.Size(100, 100);
             this.roundButton1.TabIndex = 2;
             this.roundButton1.Text = "roundButton1";
             this.roundButton1.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(933, 597);
             this.Controls.Add(this.roundButton1);
             this.Controls.Add(this.dataGridViewHiDpi1);
             this.Controls.Add(this.inputNumber1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);

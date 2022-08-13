@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net461</TargetFramework>
+		<TargetFrameworks>net6.0-windows;net461;</TargetFrameworks>
 		<UseWindowsForms>true</UseWindowsForms>
 		<IsPackable>true</IsPackable>
 		<PackageIcon>logo.png</PackageIcon>
@@ -20,6 +20,10 @@
 		<RootNamespace>Rookie</RootNamespace>
 		<AssemblyName>RookieControls</AssemblyName>
 		<ProjectGuid>{1276015C-B15C-4867-BFD1-8A902452F230}</ProjectGuid>
+		
+		<ApplicationVisualStyles>true</ApplicationVisualStyles>
+		<ApplicationUseCompatibleTextRendering>false</ApplicationUseCompatibleTextRendering>
+		<ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
 	</PropertyGroup>
 	<PropertyGroup>
 		<ApplicationManifest>app.manifest</ApplicationManifest>

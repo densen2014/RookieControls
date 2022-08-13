@@ -2,9 +2,10 @@
 	<PropertyGroup>
 		<TargetFrameworks>net6.0-windows;net461;</TargetFrameworks>
 		<UseWindowsForms>true</UseWindowsForms>
-		<RootNamespace>WindowsFormsApp2</RootNamespace>
-		<AssemblyName>WindowsFormsApp2</AssemblyName>
+		<RootNamespace>WindowsFormsDemo</RootNamespace>
+		<AssemblyName>WindowsFormsDemo</AssemblyName>
 		<OutputType>WinExe</OutputType>
+	
 		<ApplicationVisualStyles>true</ApplicationVisualStyles>
 		<ApplicationUseCompatibleTextRendering>false</ApplicationUseCompatibleTextRendering>
 		<ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
