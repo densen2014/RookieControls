@@ -15,7 +15,7 @@ public class NativeMethods
 		{
  			return (GetDpiForWindow(windowHandle) / 96f);
 		}
-		catch (System.Exception ex)
+		catch 
 		{
 			// Or fallback to GDI solutions above
 			return 1;
