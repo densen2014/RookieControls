@@ -1,13 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30517.126
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsDemo", "WindowsFormsDemo\WindowsFormsDemo.csproj", "{40041137-50E0-4E92-9B3F-6A695C6CA02B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RookieControls", "RookieControls\RookieControls.csproj", "{1276015C-B15C-4867-BFD1-8A902452F230}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RookieControls", "RookieControls\RookieControls.csproj", "{1276015C-B15C-4867-BFD1-8A902452F230}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsTaiji", "WindowsFormsApp2\WindowsFormsTaiji.csproj", "{676936E0-772A-43BC-9973-91627D311ECA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{A10A0540-847D-40D6-BAA8-FD6B8101507E}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

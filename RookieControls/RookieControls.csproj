@@ -4,10 +4,12 @@
 		<TargetFrameworks>net6.0-windows;net461;</TargetFrameworks>
 		<UseWindowsForms>true</UseWindowsForms>
 		<IsPackable>true</IsPackable>
-		<PackageIcon>logo.png</PackageIcon>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Copyright>DensenInformatica</Copyright>
+		<Authors>Alex Chow</Authors>
+		<Company>Densen Informatica</Company>
 		<Version>1.0.8</Version>
 		<Company>Densen Informatica</Company>
-		<Authors>Alex Chow</Authors>
 		<Description>
 			自定义控件组件
 
@@ -17,11 +19,12 @@
 		<PackageProjectUrl>https://github.com/densen2014/RookieControls</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/densen2014/RookieControls</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
-		<PackageTags>RookieWinformControls</PackageTags>
+		<PackageTags>RookieWinformControls , Winform组件库,支持HiDPI</PackageTags>
 		<RootNamespace>Rookie</RootNamespace>
 		<AssemblyName>RookieControls</AssemblyName>
 		<ProjectGuid>{1276015C-B15C-4867-BFD1-8A902452F230}</ProjectGuid>
-	</PropertyGroup>
+	</PropertyGroup> 
+	
 	<PropertyGroup>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
 	</PropertyGroup>
@@ -45,4 +48,15 @@
 	<ItemGroup>
 		<PackageReference Include="FontAwesome.Sharp" Version="6.1.1" />
 	</ItemGroup>
+	
+    <PropertyGroup Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(TargetFramework)', '^net\d'))">
+        <DefineConstants>NETFRAMEWORK</DefineConstants>
+    </PropertyGroup>
+    <PropertyGroup Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(TargetFramework)', '^netstandard\d'))">
+        <DefineConstants>NETSTANDARD</DefineConstants>
+    </PropertyGroup>
+    <PropertyGroup Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(TargetFramework)', '^netcoreapp\d'))">
+        <DefineConstants>NETCORE</DefineConstants>
+    </PropertyGroup>
+
 </Project>
