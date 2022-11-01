@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<!--<TargetFramework>net461</TargetFramework>-->
-		<TargetFrameworks>net6.0-windows;net461;</TargetFrameworks>
+		<TargetFramework>net461</TargetFramework>
+		<!--<TargetFrameworks>net6.0-windows;net461;</TargetFrameworks>-->
 		<UseWindowsForms>true</UseWindowsForms>
 		<IsPackable>true</IsPackable>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -30,6 +30,7 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<None Remove="pack.bat" />
+		<None Remove="RookieControls.0.1.2.nupkg" />
 		<None Remove="RookieControls.nuspec" />
 		<None Remove="RookieControls.xml" />
 	</ItemGroup>
