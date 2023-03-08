@@ -49,6 +49,12 @@
 	<ItemGroup>
 		<PackageReference Include="FontAwesome.Sharp" Version="6.*" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="MoveWindow.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	</ItemGroup>
 	
     <PropertyGroup Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(TargetFramework)', '^net\d'))">
         <DefineConstants>NETFRAMEWORK</DefineConstants>
