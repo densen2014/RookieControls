@@ -39,6 +39,7 @@ namespace Rookie.Component
 
 
         #region --构造函数--
+
         /// <summary>
         /// 构造函数
         /// </summary>
@@ -49,6 +50,7 @@ namespace Rookie.Component
             //ForeColor = 前景色;
             Font = new System.Drawing.Font("幼圆", 13);
         }
+
         /// <summary>
         /// 控件绘制
         /// </summary>
