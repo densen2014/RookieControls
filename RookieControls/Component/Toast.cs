@@ -126,7 +126,7 @@ namespace Rookie.Component
 
             // 设置程序每个打开的消息窗口的位置，超过10个就不做处理，这个可以根据自己的需求设定
             string fname;
-            for (int i = 1; i < 10; i++)
+            for (int i = 1; i < 20; i++)
             {
                 fname = "alert" + i.ToString();
                 Toast alert = (Toast)Application.OpenForms[fname];
