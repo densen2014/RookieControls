@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
+﻿// ********************************** 
+// Densen Informatica 中讯科技 
+// 作者：Alex Chow
+// e-mail:zhouchuanglin@gmail.com 
+// **********************************
 
-using System.Windows.Forms;
+using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Windows.Forms;
 
 namespace Rookie.Component
 {
@@ -16,10 +17,10 @@ namespace Rookie.Component
     {
         #region --成员变量--
 
-        RectangleF rect = new RectangleF();//控件矩形
-        bool mouseEnter;//鼠标是否进入控件区域的标志
-        bool buttonPressed;//按钮是否按下
-        bool buttonClicked;//按钮是否被点击
+        private RectangleF rect = new RectangleF();//控件矩形
+        private bool mouseEnter;//鼠标是否进入控件区域的标志
+        private bool buttonPressed;//按钮是否按下
+        private bool buttonClicked;//按钮是否被点击
         #endregion
 
         #region --属性--
@@ -93,21 +94,21 @@ namespace Rookie.Component
         /// </summary>
         [Browsable(true), DefaultValue(typeof(string), "砵"), Description("与控件关联的文本")]
         [Category("Appearance")]
-        override public string Text { get; set; }
+        public override string Text { get; set; }
 
         /// <summary>
         /// 显示控件中文本的字体
         /// </summary>
-        [Browsable(true), DefaultValue(typeof(Font),  "华文琥珀,16pt"), Description("用于显示控件中文本的字体。")]
+        [Browsable(true), DefaultValue(typeof(Font), "华文琥珀,16pt"), Description("用于显示控件中文本的字体。")]
         [Category("Appearance")]
-        override public Font Font { get; set; }
+        public override Font Font { get; set; }
 
         /// <summary>
         /// 显示控件中文本的颜色
         /// </summary>
         [Browsable(true), DefaultValue(typeof(Color), "Black"), Description("显示控件中文本的颜色。")]
         [Category("Appearance")]
-        override public Color ForeColor { get; set; }
+        public override Color ForeColor { get; set; }
 
         #endregion
 
@@ -160,7 +161,7 @@ namespace Rookie.Component
             SetStyle(ControlStyles.ResizeRedraw, true);
             SetStyle(ControlStyles.UserPaint, true);
             //初始值设定
-            this.Height = this.Width = 80;
+            Height = Width = 80;
 
             DistanceToBorder = 4;
             ButtonCenterColorStart = Color.CornflowerBlue;
@@ -179,7 +180,7 @@ namespace Rookie.Component
             IconColor2 = Color.Red;
             Text = "砵";
             Font = new System.Drawing.Font("幼圆", 13);
-            ForeColor = Color.Black; 
+            ForeColor = Color.Black;
             InitializeComponent();
         }
         #endregion
@@ -348,8 +349,8 @@ namespace Rookie.Component
         {
             int x = DistanceToBorder;
             int y = DistanceToBorder;
-            int width = this.Width - 2 * DistanceToBorder;
-            int height = this.Height - 2 * DistanceToBorder;
+            int width = Width - 2 * DistanceToBorder;
+            int height = Height - 2 * DistanceToBorder;
             rect = new RectangleF(x, y, width, height);
         }
 
@@ -437,7 +438,7 @@ namespace Rookie.Component
         /// <param name="rect">RectangleF对象</param>
         protected virtual void PaintShape(Graphics g, Pen pen, Rectangle rect)
         {
-            g.DrawRectangle(pen, rect); 
+            g.DrawRectangle(pen, rect);
         }
         /// <summary>
         /// 绘制矩形

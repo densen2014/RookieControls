@@ -1,4 +1,10 @@
-﻿using System;
+﻿// ********************************** 
+// Densen Informatica 中讯科技 
+// 作者：Alex Chow
+// e-mail:zhouchuanglin@gmail.com 
+// **********************************
+
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
@@ -24,37 +30,37 @@ namespace Rookie.Component
 
         private void InitializeComponent()
         {
-            this.PicBox = new System.Windows.Forms.PictureBox();
-            this.OuterPanel = new System.Windows.Forms.Panel();
-            this.OuterPanel.SuspendLayout();
-            this.SuspendLayout();
+            PicBox = new System.Windows.Forms.PictureBox();
+            OuterPanel = new System.Windows.Forms.Panel();
+            OuterPanel.SuspendLayout();
+            SuspendLayout();
             // 
             // PicBox
             // 
-            this.PicBox.Location = new System.Drawing.Point(0, 0);
-            this.PicBox.Name = "PicBox";
-            this.PicBox.Size = new System.Drawing.Size(150, 140);
-            this.PicBox.TabIndex = 3;
-            this.PicBox.TabStop = false;
+            PicBox.Location = new System.Drawing.Point(0, 0);
+            PicBox.Name = "PicBox";
+            PicBox.Size = new System.Drawing.Size(150, 140);
+            PicBox.TabIndex = 3;
+            PicBox.TabStop = false;
             // 
             // OuterPanel
             // 
-            this.OuterPanel.AutoScroll = true;
-            this.OuterPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.OuterPanel.Controls.Add(this.PicBox);
-            this.OuterPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.OuterPanel.Location = new System.Drawing.Point(0, 0);
-            this.OuterPanel.Name = "OuterPanel";
-            this.OuterPanel.Size = new System.Drawing.Size(210, 190);
-            this.OuterPanel.TabIndex = 4;
+            OuterPanel.AutoScroll = true;
+            OuterPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            OuterPanel.Controls.Add(PicBox);
+            OuterPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            OuterPanel.Location = new System.Drawing.Point(0, 0);
+            OuterPanel.Name = "OuterPanel";
+            OuterPanel.Size = new System.Drawing.Size(210, 190);
+            OuterPanel.TabIndex = 4;
             // 
             // PictureBox
             // 
-            this.Controls.Add(this.OuterPanel);
-            this.Name = "PictureBox";
-            this.Size = new System.Drawing.Size(210, 190);
-            this.OuterPanel.ResumeLayout(false);
-            this.ResumeLayout(false);
+            Controls.Add(OuterPanel);
+            Name = "PictureBox";
+            Size = new System.Drawing.Size(210, 190);
+            OuterPanel.ResumeLayout(false);
+            ResumeLayout(false);
 
         }
         #endregion
@@ -102,7 +108,7 @@ namespace Rookie.Component
                         RedCross();
                     }
                 }
-                else if (string.IsNullOrWhiteSpace(PictureFilePath) &&  !System.IO.File.Exists(PictureFilePath))
+                else if (string.IsNullOrWhiteSpace(PictureFilePath) && !System.IO.File.Exists(PictureFilePath))
                 {
                     RedCross();
                 }
@@ -270,8 +276,7 @@ namespace Rookie.Component
         {
             if (disposing)
             {
-                if (components != null)
-                    components.Dispose();
+                components?.Dispose();
             }
             base.Dispose(disposing);
         }

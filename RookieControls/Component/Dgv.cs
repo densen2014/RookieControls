@@ -1,8 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿// ********************************** 
+// Densen Informatica 中讯科技 
+// 作者：Alex Chow
+// e-mail:zhouchuanglin@gmail.com 
+// **********************************
+
+using System;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Rookie.Component
@@ -37,18 +40,18 @@ namespace Rookie.Component
         }
         public void HiDpi()
         {
-            DpiRate = DpiRate==0? NativeMethods.GetDisplayScaleFactor(this.Handle): DpiRate;
-            this.ColumnHeadersHeight = (int)(this.ColumnHeadersHeight * DpiRate);
-            this.RowHeadersWidth = (int)(this.RowHeadersWidth * DpiRate);
-            this.RowTemplate.Height = (int)(this.RowTemplate.Height * DpiRate);
-            
-         }
+            DpiRate = DpiRate == 0 ? NativeMethods.GetDisplayScaleFactor(Handle) : DpiRate;
+            ColumnHeadersHeight = (int)(ColumnHeadersHeight * DpiRate);
+            RowHeadersWidth = (int)(RowHeadersWidth * DpiRate);
+            RowTemplate.Height = (int)(RowTemplate.Height * DpiRate);
+
+        }
 
         #endregion
 
         private void Load(object sender, EventArgs e)
         {
-            this.DoubleBuffered = true;
+            DoubleBuffered = true;
         }
 
     }

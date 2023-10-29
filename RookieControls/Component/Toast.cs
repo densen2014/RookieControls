@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿// ********************************** 
+// Densen Informatica 中讯科技 
+// 作者：Alex Chow
+// e-mail:zhouchuanglin@gmail.com 
+// **********************************
+
 using FontAwesome.Sharp;
+using System;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace Rookie.Component
 {
@@ -58,8 +58,8 @@ namespace Rookie.Component
             {
                 case AlertFormAction.Start:
                     timer1.Interval = 50;//警告显示的时间
-                    this.Opacity += 0.1;
-                    if (this.Opacity == 1.0)
+                    Opacity += 0.1;
+                    if (Opacity == 1.0)
                     {
                         action = AlertFormAction.Wait;
                     }
@@ -70,10 +70,10 @@ namespace Rookie.Component
                     break;
                 case AlertFormAction.Close:
                     timer1.Interval = 50;//警告退出的时间
-                    this.Opacity -= 0.1;
-                    if (this.Opacity == 0.0)
+                    Opacity -= 0.1;
+                    if (Opacity == 0.0)
                     {
-                        this.Close();
+                        Close();
                     }
                     break;
                 default:
@@ -95,20 +95,20 @@ namespace Rookie.Component
             switch (type)
             {
                 case AlertType.Info:
-                    this.pictureBox1.Image = IconChar.Info.ToBitmap(Color.White);
-                    this.BackColor = Color.RoyalBlue;
+                    pictureBox1.Image = IconChar.Info.ToBitmap(Color.White);
+                    BackColor = Color.RoyalBlue;
                     break;
                 case AlertType.Success:
-                    this.pictureBox1.Image = IconChar.AlignLeft.ToBitmap(Color.White);  //Properties.Resources.success;
-                    this.BackColor = Color.SeaGreen;
+                    pictureBox1.Image = IconChar.AlignLeft.ToBitmap(Color.White);  //Properties.Resources.success;
+                    BackColor = Color.SeaGreen;
                     break;
                 case AlertType.Warning:
-                    this.pictureBox1.Image = IconChar.AlignCenter.ToBitmap(Color.White);  //Properties.Resources.warning;
-                    this.BackColor = Color.DarkOrange;
+                    pictureBox1.Image = IconChar.AlignCenter.ToBitmap(Color.White);  //Properties.Resources.warning;
+                    BackColor = Color.DarkOrange;
                     break;
                 case AlertType.Error:
-                    this.pictureBox1.Image = IconChar.CalendarMinus.ToBitmap(Color.White); //Properties.Resources.error;
-                    this.BackColor = Color.DarkRed;
+                    pictureBox1.Image = IconChar.CalendarMinus.ToBitmap(Color.White); //Properties.Resources.error;
+                    BackColor = Color.DarkRed;
                     break;
                 default:
                     break;
@@ -122,7 +122,7 @@ namespace Rookie.Component
             this.duration = duration;
 
             // 设置窗口启始位置
-            this.StartPosition = FormStartPosition.Manual;
+            StartPosition = FormStartPosition.Manual;
 
             // 设置程序每个打开的消息窗口的位置，超过10个就不做处理，这个可以根据自己的需求设定
             string fname;
@@ -132,40 +132,40 @@ namespace Rookie.Component
                 Toast alert = (Toast)Application.OpenForms[fname];
                 if (alert == null)
                 {
-                    this.Name = fname;
-                    this.x = Screen.PrimaryScreen.WorkingArea.Width - this.Width;
-                    this.y = Screen.PrimaryScreen.WorkingArea.Height - this.Height * i - 5 * i;
-                    this.Location = new Point(x, y);
+                    Name = fname;
+                    x = Screen.PrimaryScreen.WorkingArea.Width - Width;
+                    y = Screen.PrimaryScreen.WorkingArea.Height - Height * i - 5 * i;
+                    Location = new Point(x, y);
                     break;
                 }
             }
 
             labelContent.Text = message;
-            this.Opacity = 0.0;
+            Opacity = 0.0;
             SetAlertTheme(type);
-            this.Show();
+            Show();
 
             action = AlertFormAction.Start;
             //启动时钟
             timer1.Start();
 
             // 注销鼠标事件
-            this.MouseLeave += new System.EventHandler(this.AlertMessageForm_MouseLeave);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AlertMessageForm_MouseMove);
+            MouseLeave += new System.EventHandler(AlertMessageForm_MouseLeave);
+            MouseMove += new System.Windows.Forms.MouseEventHandler(AlertMessageForm_MouseMove);
 
         }
 
         //鼠标悬停警告框处理
         private void AlertMessageForm_MouseMove(object sender, MouseEventArgs e)
         {
-            this.Opacity = 1.0;
+            Opacity = 1.0;
             timer1.Interval = int.MaxValue;//警告框停留时间
             action = AlertFormAction.Close;
         }
 
         private void AlertMessageForm_MouseLeave(object sender, EventArgs e)
         {
-            this.Opacity = 1.0;
+            Opacity = 1.0;
             timer1.Interval = 3000;//警告框停留时间
             action = AlertFormAction.Close;
         }
@@ -173,14 +173,14 @@ namespace Rookie.Component
         private void buttonClose_Click(object sender, EventArgs e)
         {
             // 注销鼠标事件
-            this.MouseLeave -= new System.EventHandler(this.AlertMessageForm_MouseLeave);
-            this.MouseMove -= new System.Windows.Forms.MouseEventHandler(this.AlertMessageForm_MouseMove);
+            MouseLeave -= new System.EventHandler(AlertMessageForm_MouseLeave);
+            MouseMove -= new System.Windows.Forms.MouseEventHandler(AlertMessageForm_MouseMove);
 
             timer1.Interval = 50;//警告关闭的时间
-            this.Opacity -= 0.1;
-            if (this.Opacity == 0.0)
+            Opacity -= 0.1;
+            if (Opacity == 0.0)
             {
-                this.Close();
+                Close();
             }
         }
 

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace AME.win.Util
 {
-    public class MoveWindow:Form 
+    public class MoveWindow : Form
     {
         #region "移动窗体"
 
@@ -38,7 +38,7 @@ namespace AME.win.Util
                     break;
                 case 0x84:
                     //鼠标点任意位置后可以拖动窗体
-                    this.DefWndProc(ref m);
+                    DefWndProc(ref m);
                     if (m.Result.ToInt32() == 0x1)
                     {
                         m.Result = new IntPtr(0x2);
@@ -53,8 +53,7 @@ namespace AME.win.Util
             }
         }
 
-
-        Point pointStart;
+        private Point pointStart;
         private void lbTitle_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
         {
             pointStart.X = e.X;
@@ -65,7 +64,7 @@ namespace AME.win.Util
         private void lbTitle_MouseMove(object sender, System.Windows.Forms.MouseEventArgs e)
         {
             if (pointStart.X > 0)
-                this.Location = new Point(this.Location.X + e.Location.X - pointStart.X, this.Location.Y + e.Location.Y - pointStart.Y);
+                Location = new Point(Location.X + e.Location.X - pointStart.X, Location.Y + e.Location.Y - pointStart.Y);
         }
 
 

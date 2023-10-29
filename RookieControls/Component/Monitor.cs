@@ -1,8 +1,12 @@
-﻿
+﻿// ********************************** 
+// Densen Informatica 中讯科技 
+// 作者：Alex Chow
+// e-mail:zhouchuanglin@gmail.com 
+// **********************************
+
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
 using System.Timers;
-using System.Linq;
 
 namespace Monitor
 {
@@ -40,9 +44,9 @@ namespace Monitor
         /// <returns></returns>
         public List<string> NicList()
         {
-            var nicslist =new List<string>();
+            var nicslist = new List<string>();
             NetworkInterface[] nics = NetworkInterface.GetAllNetworkInterfaces();
-            foreach (var var in nics) nicslist.Add(var.Description); 
+            foreach (var var in nics) nicslist.Add(var.Description);
             return nicslist;
         }
 
