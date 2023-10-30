@@ -34,6 +34,47 @@ namespace Rookie.Component
         NeverHide
     }
 
+    public class OptionToast
+    {
+        public OptionToast(string InfoChn, Form form, AlertType alertType = AlertType.Info, AlertDuration duration = AlertDuration.Short)
+        {
+            Message = InfoChn;
+            this.form = form ;
+            this.alertType = alertType;
+            this.duration = duration;
+        }
+
+        public string Message { get; set; }
+        public Form form { get; set; }
+        public AlertType alertType { get; set; }
+        public AlertDuration duration { get; set; }
+
+    }
+
+    public class ToastExt 
+    {
+        static int mainThreadId = System.Threading.Thread.CurrentThread.ManagedThreadId;
+        static int CurrentThreadID => System.Threading.Thread.CurrentThread.ManagedThreadId;
+
+        /// <summary>
+        /// 判断当前线程是否为主线程<para></para>
+        /// If called in the non main thread, will return false;
+        /// </summary>
+        static bool IsMainThread
+        {
+            get { return System.Threading.Thread.CurrentThread.ManagedThreadId == mainThreadId; }
+        }
+
+        public static void ShowToastInvoke(string InfoChn, Form form = null, AlertType alertType =AlertType.Info, AlertDuration duration = AlertDuration.Short)
+        {
+            mainThreadId = System.Threading.Thread.CurrentThread.ManagedThreadId;
+            if (IsMainThread)
+            {
+                new Toast(InfoChn, alertType, form, duration);
+            }
+        }
+
+    }
     public partial class Toast : Form
     {
         public Toast()
