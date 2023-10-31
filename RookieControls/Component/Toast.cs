@@ -100,7 +100,7 @@ namespace Rookie.Component
                 case AlertFormAction.Start:
                     timer1.Interval = 50;//警告显示的时间
                     Opacity += 0.1;
-                    if (Opacity == 1.0)
+                    if (Opacity == 0.6)
                     {
                         action = AlertFormAction.Wait;
                     }
