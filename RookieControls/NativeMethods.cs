@@ -24,4 +24,6 @@ public class NativeMethods
 
     }
 
+    public static bool DesignMode_ { get; set; } = false;
+
 }
