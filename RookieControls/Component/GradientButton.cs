@@ -11,6 +11,7 @@ namespace Rookie.Component
 
         protected override void OnPaint(PaintEventArgs pevent)
         {
+            base.OnPaint(pevent);
             pevent.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
             Rectangle rect = this.ClientRectangle;
